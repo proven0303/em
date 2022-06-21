@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>검색 결과</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/mobile/reset.css">
+	<link rel="stylesheet" href="../../css/mobile/common.css">
+	<link rel="stylesheet" href="../../css/mobile/swiper.css">
+	<link rel="stylesheet" href="../../css/mobile/emart.css">
+	<script src="../../js/mobile/lib/jquery-1.12.4.js"></script>
+	<script src="../../js/mobile/lib/swiper.min.js"></script>
+	<script src="../../js/mobile/front/common.js"></script><!--추후-->
+</head>
+<body>
+
+<div class="bodyWrap srch-wp"><!-- srch-wp 클래스 추가-->
+	<!--header-->
+	<header id="header">
+    <!--서브페이지 header영역-->
+		<div class="hd-topWp h-sub"><!--서브페이지 h-sub 클래스 추가-->
+      <div class="btn-back"><a href=""><span class="blind">뒤로가기</span></a></div>
+		</div>
+    <!--//서브페이지 header영역-->
+	</header>
+
+	<div id="container" class="srch"><!--검색 페이지에 srch 추가 -->
+		<div class="sub-contWp">
+			<section class="sub-content">
+				<div class="srch-result-tit">
+          'POG' 검색결과 총 <strong>116</strong>건
+        </div>
+        <div class="sear-tab-wp">
+          <div class="swiper-container s-tab-menu sw-menu"><!--스와이퍼탭메뉴사용: 메뉴가 길어질 경우 대비 - 360이하는 스크롤됨 -->
+            <ul class="swiper-wrapper st-menu">
+              <li class="active swiper-slide">
+                <a href="#none">전체<span>116</span></a><!--숫자 총합이 모바일에서는 있음-->
+              </li>
+              <li class="swiper-slide">
+                <a href="#none">시스템 메뉴<span>66</span></a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#none">업무도움방<span>166</span></a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#none">임직원<span>16</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="sear-tabcont-wp">
+            <!--전체 선택시 나오는 화면-->
+            <div class="sear-cont-wp">
+              <!--시스템메뉴 -->
+              <div class="sear-cont">
+                <div class="sc-head"><strong class="tit">시스템 메뉴</strong><span class="num">2</span></div>
+                <div class="sc-body">
+                  <div class="sc-list-wp">
+                    <ul class="sc-list system">
+                      <li>
+                        <div class="bookmark-wp"><button type="button" class="icon-bookmark on"></button></div><!--즐겨찾기 추가시 on 추가-->
+                        <p class="sc-cont"> e<strong class="word">POG</strong></p>
+                      </li>
+                      <li>
+                        <div class="bookmark-wp"><button type="button" class="icon-bookmark"></button></div>
+                        <p class="sc-cont"> 시스템명 <em class="arrow">&gt;</em> <strong class="word">POG</strong>요청<em class="arrow">&gt;</em> 메뉴<em class="arrow">&gt;</em> 3번째메뉴 </p>
+                      </li>
+                      <li>
+                        <div class="bookmark-wp"><button type="button" class="icon-bookmark"></button></div>
+                        <p class="sc-cont"> 시스템명<em class="arrow">&gt;</em> <strong class="word">POG</strong>요청<em class="arrow">&gt;</em> 요청요청<em class="arrow">&gt;</em> 3번째메뉴 </p>
+                      </li>
+                    </ul>
+                  </div><!--//sc-list-wp-->
+                  <!--리스트가 5개이상일 경우 더보기버튼이 나타남
+                  <div class="sc-btn-more"><a href="">더보기</a></div>
+                  --->
+                </div>
+              </div>
+               <!--시스템메뉴 -->
+              <!--업무도움방 -->
+              <div class="sear-cont">
+                <div class="sc-head"><strong class="tit">업무도움방</strong><span class="num">2</span></div>
+                <div class="sc-body">
+                  <div class="sc-tmroom-wp">
+                    <ul>
+                      <li>
+                        <div class="tm-list-wp">
+                          <div class="cont">
+                            <p class="tit"><a href="">1월 2째주 <strong class="word">POG</strong>관련 고객문의 리스트관련 고객문의 리스트관련 고객문의 리스트관련 고객문의 리스트</a></p>
+                            <span class="stit">업무지침방 &gt; 고객서비스1팀 &gt; 공지방</span>
+                            <div class="tm-num-wp">
+                              <div class="tm-num">
+                                <i class="icon-em-sear"></i>
+                                <span>조회</span>
+                                <strong>999</strong>
+                              </div>
+                              <div class="tm-num">
+                                <i class="icon-em-reply"></i>
+                                <span>댓글</span>
+                                <strong>99</strong>
+                              </div>
+                            </div>
+                          </div><!--cont-->
+                          <div class="bookmark-wp"><button type="button" class="btn-bookmark on"></button></div><!--즐겨찾기시 on클래스 추가-->
+                        </div>
+                      </li>
+                      <li>
+                        <div class="tm-list-wp">
+                          <div class="cont">
+                            <p class="tit"><a href="">1월 2째주 <strong class="word">POG</strong>관련 고객문의 리스트관련 고객문의 </a></p>
+                            <span class="stit">업무지침방 &gt; 고객서비스1팀 &gt; 공지방</span>
+                            <div class="tm-file">
+                              <a href="">
+                                <span class="file-tit"><i class="icon-em-file"></i>220104 문서 공람문서 공람문서 공람문서 공람문서 공람문서 공람</span><!--파일명-->
+                                <em class="file-name">.pdf</em><!--파일종류-->
+                              </a>
+                            </div>
+                            <div class="tm-num-wp">
+                              <div class="tm-num">
+                                <i class="icon-em-sear"></i>
+                                <span>조회</span>
+                                <strong>999999999</strong>
+                              </div>
+                              <div class="tm-num">
+                                <i class="icon-em-reply"></i>
+                                <span>댓글</span>
+                                <strong>98888889</strong>
+                              </div>
+                            </div>
+                          </div><!--cont-->
+                          <div class="bookmark-wp"><button type="button" class="btn-bookmark "></button></div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="tm-list-wp">
+                          <div class="cont">
+                            <p class="tit"><a href="">1월 2째주 <strong class="word">POG</strong>관련 고객문의 </a></p>
+                            <span class="stit">업무지침방 &gt; 고객서비스1팀 &gt; 공지방</span>
+                            <div class="tm-file">
+                              <a href="">
+                                <span class="file-tit"><i class="icon-em-file"></i>220104 문서 공람문서</span><!--파일명-->
+                                <em class="file-name">.pdf</em><!--파일종류-->
+                              </a>
+                            </div>
+                            <div class="tm-num-wp">
+                              <div class="tm-num">
+                                <i class="icon-em-sear"></i>
+                                <span>조회</span>
+                                <strong>999</strong>
+                              </div>
+                              <div class="tm-num">
+                                <i class="icon-em-reply"></i>
+                                <span>댓글</span>
+                                <strong>99</strong>
+                              </div>
+                            </div>
+                          </div><!--cont-->
+                          <div class="bookmark-wp"><button type="button" class="btn-bookmark"></button></div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="tm-list-wp">
+                          <div class="cont">
+                            <p class="tit"><a href="">1월 2째주 <strong class="word">POG</strong>관련 고객문의 리스트관련 </a></p>
+                            <span class="stit">업무지침방 &gt; 고객서비스1팀 &gt; 공지방</span>
+                            <div class="tm-num-wp">
+                              <div class="tm-num">
+                                <i class="icon-em-sear"></i>
+                                <span>조회</span>
+                                <strong>999</strong>
+                              </div>
+                              <div class="tm-num">
+                                <i class="icon-em-reply"></i>
+                                <span>댓글</span>
+                                <strong>99</strong>
+                              </div>
+                            </div>
+                          </div><!--cont-->
+                          <div class="bookmark-wp"><button type="button" class="btn-bookmark on"></button></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div><!--//sc-tmroom-wp--> 
+                  <div class="sc-btn-more"><a href="">더보기</a></div><!--리스트가 5개이상일 경우 더보기버튼이 나타남:-->
+                </div>
+              </div>
+              <!--업무도움방 -->
+
+              <!--임직원 -->
+              <div class="sear-cont">
+                <div class="sc-head"><strong class="tit">임직원</strong><span class="num">2</span></div>
+                <div class="sc-body">
+                  <div class="sc-plist-wp">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <div class="sc-cont-wp">
+                            <div class="photo-wp"><div class="photo"><img src="../../images/emart/pc/temp-photo.png"></div></div>
+                            <div class="cont">
+                              <p class="name"><strong>이호정 팀장(E본사)</strong><span class="ellipsis">신선(축산/수산) MSV팀장, 15층</span></p>
+                              <p class="info">(주)이마트 / MSV담당</p>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <div class="sc-cont-wp">
+                            <div class="photo-wp"><div class="photo"></div></div>
+                            <div class="cont">
+                              <p class="name"><strong>이호정 팀장(E본사)</strong><span class="ellipsis">신선(축산/수산) MSV팀장, 15층신선(축산/수산) MSV팀장, 15층신선(축산/수산) MSV팀장, 15층신선(축산/수산) MSV팀장, 15층</span></p>
+                              <p class="info">(주)이마트 / MSV담당</p>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <div class="sc-cont-wp">
+                            <div class="photo-wp"><div class="photo"></div></div>
+                            <div class="cont">
+                              <p class="name"><strong>이호정 팀장(E본사)</strong><span class="ellipsis">신선(축산/수산) MSV팀장, 15층신선(축산/수산) MSV팀장, 15층신선(축산/수산) MSV팀장, 15층신선(축산/수산) MSV팀장, 15층</span></p>
+                              <p class="info">(주)이마트 / MSV담당</p>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <div class="sc-cont-wp">
+                            <div class="photo-wp"><div class="photo"></div></div>
+                            <div class="cont">
+                              <p class="name"><strong>이호정 팀장(E본사)</strong><span class="ellipsis">신선(축산/수산) MSV팀장, 15층신선(축산/수산) MSV팀장, 15층신선(축산/수산) MSV팀장, 15층신선(축산/수산) MSV팀장, 15층</span></p>
+                              <p class="info">(주)이마트 / MSV담당</p>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div><!--//sc-plist-wp-->
+                  <!--리스트가 5개이상일 경우 더보기버튼이 나타남
+                  <div class="sc-btn-more"><a href="">더보기</a></div>--->
+                </div>
+              </div>
+               <!--임직원 -->
+            </div><!--sear-cont-wp-->
+            <!--//전체 선택시 나오는 화면-->
+          </div>
+        </div><!--//sear-tab-wp-->
+			</section><!--//sub-content-->
+		</div><!--//subCont-wp-->
+	</div><!--//#container-->
+</div><!--//bodyWrap-->
+</body>
+</html>
+                

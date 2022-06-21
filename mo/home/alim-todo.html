@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>알림위젯- to do</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/mobile/reset.css">
+	<link rel="stylesheet" href="../../css/mobile/common.css">
+	<link rel="stylesheet" href="../../css/mobile/swiper.css">
+	<link rel="stylesheet" href="../../css/mobile/emart.css">
+	<script src="../../js/mobile/lib/jquery-1.12.4.js"></script>
+	<script src="../../js/mobile/lib/swiper.min.js"></script>
+	<script src="../../js/mobile/front/common.js"></script>
+</head>
+<body>
+
+<div class="bodyWrap">
+	<!--header-->
+	<header id="header">
+    <!--서브페이지 header영역-->
+		<div class="hd-topWp h-sub"><!--서브페이지 h-sub 클래스 추가-->
+      <div class="btn-back"><a href=""><span class="blind">뒤로가기</span></a></div>
+      <h2 class="s-title">To do <strong class="num">5</strong></h2>
+      <div class="btn-close"><a href=""><span class="blind">닫기</span></a></div>
+		</div>
+    <!--//서브페이지 header영역-->
+	</header>
+
+	<div id="container" class="alim-wrap"><!--알림영역 페이지에 alim-wrap 추가 -->
+		<div class="portal-contWp">
+			<section class="portal-content">
+        <!--알림영역 : To do-->
+        <div class="alim-cont-wp">
+          <div class="alim-todo-wp">
+            <!-- 내용 -->
+            <div class="alim-content-wp">
+              <div class="alim-item">
+                <div class="accordion-wrap">
+                  <div class="accordion">
+                    <div class="accord-cont">
+                      <div class="a-head">
+                        <a href="#none" class="active"><!--열려 있는 상태 active 추가-->
+                          <strong class="a-tit"> UNCOMPLETED</strong><!--20220526 UNREAD ->  UNCOMPLETED 로 명칭 수정-->
+                          <span class="a-num str">2</span>
+                        </a>
+                      </div>
+                      <div class="a-body on"><!--열려 있는 상태 on 추가-->
+                        <div class="a-cont-wp">
+                          <ul class="a-list-wp unread"><!--unread 상태일때 unread 클래스 추가-->
+                            <li>
+                              <p><a href="">긴급매가 적용 상품수, 매출액 조회</a></p>
+                              <strong class="num">11</strong>
+                            </li>
+                            <li>
+                              <p><a href="">당초 기타 수지 계획조정 및 시물레이션으로 타이틀이 2줄이 되는 경우</a></p>
+                              <strong class="num">11</strong>
+                            </li>
+                          </ul>
+                        </div>
+                      </div><!--//a-body-->
+                    </div><!--//accord-cont-->
+                    <div class="accord-cont">
+                      <div class="a-head">
+                        <a href="#none" class="active"><!--열려 있는 상태 active 추가-->
+                          <strong class="a-tit">COMPLETED</strong>
+                          <span class="a-num">4</span>
+                        </a>
+                      </div>
+                      <div class="a-body on"><!--열려 있는 상태 on 추가-->
+                        <div class="a-cont-wp">
+                          <ul class="a-list-wp completed"><!--완료 상태일때 completed 클래스 추가-->
+                            <li>
+                              <p><a href=""><em class="icon-pc">PC</em>이관대상 상품 등록(무이관)</a></p>
+                              <strong class="num">7</strong>
+                              <div class="a-btm-cont">
+                                <div class="a-state">전체 <span>10</span></div>
+                                <div class="a-state">미입력 <span>10</span></div>
+                              </div>
+                            </li>
+                            <li>
+                              <p><a href="">긴급매가 적용 상품수, 매출액 조회</a></p>
+                              <strong class="num">7</strong>
+                              <div class="a-btm-cont">
+                                <div class="a-state">전체 <span>10</span></div>
+                                <div class="a-state">미입력 <span>10</span></div>
+                              </div>
+                            </li>
+                            <li>
+                              <p><a href="">당초 기타 수지 계획조정 및 시물레이션으로 타이틀이 2줄이 되는 경우</a></p>
+                              <strong class="num">11</strong>
+                              <div class="a-btm-cont">
+                                <div class="a-state">전체 <span>10</span></div>
+                                <div class="a-state">미입력 <span>3</span></div>
+                                <div class="a-state">반려 <span>3</span></div>
+                              </div>
+                            </li>
+                            <li>
+                              <p><a href="">긴급매가 적용 상품수, 매출액 조회</a></p>
+                              <strong class="num">7</strong>
+                              <div class="a-btm-cont">
+                                <div class="a-state">전체 <span>10</span></div>
+                                <div class="a-state">미입력 <span>10</span></div>
+                                <div class="a-state">반려 <span>10</span></div>
+                                <div class="a-state">기타 <span>10</span></div>
+                              </div>
+                            </li>
+                            <li>
+                              <p><a href="">긴급매가 적용 상품수, 매출액 조회</a></p>
+                              <strong class="num">7</strong>
+                              <div class="a-btm-cont">
+                                <div class="a-state">전체 <span>10</span></div>
+                                <div class="a-state">미입력 <span>13</span></div>
+                                <div class="a-state">반려 <span>13</span></div>
+                                <div class="a-state">기타표기대상 항목명 <span>10</span></div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div><!--//accord-cont-->
+                  </div><!--//accordion-->
+                </div><!--//accordion-wrap-->
+              </div>
+            </div><!-- //내용 -->
+          </div><!--//alim-todo-wp-->
+        </div><!--//alim-cont-wp-->
+        <!--//알림영역 : To do-->
+			</section><!--//portal-content-->
+		</div><!--//portalCont-wp-->
+	</div><!--//#container-->
+</div><!--//bodyWrap-->
+</body>
+</html>
+         
+
+
+	
+
+			
+		
+		
+	
+       

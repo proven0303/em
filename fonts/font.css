@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/*
+@import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap 
+*/
+
+  
+   @font-face {
+       font-family: 'Spoqa Han Sans Neo';
+       font-weight: 700;
+       src: local('Spoqa Han Sans Neo Bold'),
+       url('SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff2') format('woff2'),
+       url('SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff') format('woff'),
+       url('SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.ttf') format('truetype'),
+       url('SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.otf') format('opentype');
+   }
+   
+   
+   @font-face {
+       font-family: 'Spoqa Han Sans Neo';
+       font-weight: 500;
+       src: local('Spoqa Han Sans Neo Medium'),
+       url('SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.woff2') format('woff2'),
+       url('SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.woff') format('woff'),
+       url('SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.ttf') format('truetype'),
+       url('SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.otf') format('opentype');
+   }
+   
+   @font-face {
+       font-family: 'Spoqa Han Sans Neo';
+       font-weight: 400;
+       src: local('Spoqa Han Sans Neo Regular'),
+       url('SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff2') format('woff2'),
+       url('SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff') format('woff'),
+       url('SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.ttf') format('truetype'),
+       url('SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.otf') format('opentype');
+   }
+   
+   @font-face {
+       font-family: 'Spoqa Han Sans Neo';
+       font-weight: 300;
+       src: local('Spoqa Han Sans Neo Light'),
+       url('SpoqaHanSansNeo/SpoqaHanSansNeo-Light.woff2') format('woff2'),
+       url('SpoqaHanSansNeo/SpoqaHanSansNeo-Light.woff') format('woff'),
+       url('SpoqaHanSansNeo/SpoqaHanSansNeo-Light.ttf') format('truetype'),
+       url('SpoqaHanSansNeo/SpoqaHanSansNeo-Light.otf') format('opentype');
+   }
+   
+   @font-face {
+       font-family: 'Spoqa Han Sans Neo';
+       font-weight: 100;
+       src: local('Spoqa Han Sans Neo Thin'),
+       url('SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.woff2') format('woff2'),
+       url('SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.woff') format('woff'),
+       url('SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.ttf') format('truetype'),
+       url('SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.otf') format('opentype');
+   }
+
+
+
+    @font-face {
+        font-family: 'Quicksand';
+        font-weight: 700;
+        src: local('Quicksand Bold'),
+        url('Quicksand/Quicksand-Bold.ttf') format('truetype');
+    }
+
+
+    @font-face {
+        font-family: 'Quicksand';
+        font-weight: 500;
+        src: local('Quicksand SemiBold'),
+        url('Quicksand/Quicksand-SemiBold.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Quicksand';
+        font-weight: 400;
+        src: local('Quicksand Medium'),
+        url('Quicksand/Quicksand-Medium.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Quicksand';
+        font-weight: 300;
+        src: local('Quicksand Regular'),
+        url('Quicksand/Quicksand-Regular.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Quicksand';
+        font-weight: 100;
+        src: local('Quicksand Light'),
+        url('Quicksand/Quicksand-Light.ttf') format('truetype');
+    }

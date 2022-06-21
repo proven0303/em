@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>이마트 모바일</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/mobile/reset.css">
+	<link rel="stylesheet" href="../../css/mobile/common.css">
+	<link rel="stylesheet" href="../../css/mobile/swiper.css">
+	<link rel="stylesheet" href="../../css/mobile/emart.css">
+	<script src="../../js/mobile/lib/jquery-1.12.4.js"></script>
+	<script src="../../js/mobile/lib/swiper.min.js"></script>
+	<script src="../../js/mobile/front/common.js"></script>
+</head>
+<body>
+
+<div class="bodyWrap">
+	<!--header-->
+	<header id="header">
+
+		<div class="hd-topWp">
+			<h1 class="logo"><a href=""><img src="../../images/emart/mo/logo_eportal50.png" alt="logo"><strong>업무포털</strong></a></h1>
+			<div class="top-menuWp">
+				<ul class="tmenu">
+					<li class="btn-sear"><a href=""><span class="blind">검색</span></a></li>
+					<li class="btn-alim"><a href=""><span class="blind">알림</span></a></li>
+					<li class="btn-set"><a href=""><span class="blind">설정</span></a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</header>
+
+	<div id="container" class="em-portal"><!--메인 포탈에 em-portal 클래스 추가 -->
+		<div class="portal-contWp">
+			<section class="portal-content">
+			
+      <!--카드 위젯 모음-->
+        <!--점포요청-->
+        <article class="card-widget-wp">
+          <div class="card-widget bg-70">
+            <div class="p-head">
+              <strong class="tit">점포요청</strong>
+            </div>
+            <div class="p-body">
+              <div class="no-scroll-wp">
+                <div class="card-sel-menu">
+                  <div class="c-sel-menu">
+                      <a href="#none" class="on"><span>품질불량<br>해결요청</span></a><!--선택되면 on 클래스 추가-->
+                      <button type="button" class="btn-go"></button>
+                  </div>
+                  <div class="c-sel-menu">
+                      <a href="#none"><span>POG<br>변경요청</span></a>
+                      <button type="button" class="btn-go"></button>
+                  </div>
+                  <div class="c-sel-menu">
+                      <a href="#none"><span>추가발주<br>요청</span></a>
+                      <button type="button" class="btn-go"></button>
+                  </div>
+                </div><!--//card-sel-menu-->
+                <div class="card-sel-list">
+                  <div class="card-list-wp">
+                      <ul class="card-list">
+                        <li>
+                            <span class="em-banner-badge ing-state"><em class="yet">미처리</em></span><!--
+                                미처리 : yet,
+                                진행중, 처리중 : ing, 
+                                답변완료, 완료 : end  클래스 추가
+                            -->
+                            <a href="" class="em-cont ellipsis">880651123502 풀무원 물만두 700g 풀무원 물만두 700g풀무원 물만두 700g풀무원 물만두 700g풀무원 물만두 700g</a>
+                            <span class="date">22.02.12</span>
+                        </li>
+                        <li>
+                            <span class="em-banner-badge ing-state"><em class="ing">처리중</em></span>
+                            <a href="" class="em-cont ellipsis">880651123502 풀무원 물만두 700g 풀무원 물만두 700g풀무원 물만두 700g풀무원 물만두 700g풀무원 물만두 700g</a>
+                            <span class="date">22.02.12</span>
+                        </li>
+                      </ul>
+                  </div>
+                </div>
+              </div><!--//no-scroll-wp-->
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//점포요청-->
+
+        <!--점포요청-->
+        <article class="card-widget-wp">
+          <div class="card-widget bg-70">
+            <div class="p-head">
+              <strong class="tit">점포요청</strong>
+            </div>
+            <div class="p-body">
+              <div class="no-scroll-wp">
+                <div class="card-sel-wp">
+                  <div class="table-cell-wp">
+                      <div class="table-tit"><strong class="tit">품질불량 해결요청</strong></div>
+                      <div class="table-cont">
+                          <div class="btn-wp">
+                              <a href="" class="em-btn-unresolve">
+                                  <span>미처리</span> 
+                                  <div class="num"><strong>373</strong>건</div>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="table-cell-wp">
+                      <div class="table-tit"><strong class="tit">POG 변경요청</strong></div>
+                      <div class="table-cont">
+                          <div class="btn-wp">
+                              <a href="" class="em-btn-unresolve">
+                                  <span>미처리</span> 
+                                  <div class="num"><strong>123</strong>건</div>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="table-cell-wp">
+                      <div class="table-tit"><strong class="tit">추가발주 요청</strong></div>
+                      <div class="table-cont">
+                          <div class="btn-wp">
+                              <a href="" class="em-btn-unresolve">
+                                  <span>미처리</span> 
+                                  <div class="num"><strong>33</strong>건</div>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                </div><!--//card-sel-wp-->
+              </div><!--//no-scroll-wp-->
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//점포요청-->
+
+        <!--점포의견취합-->
+        <article class="card-widget-wp">
+          <div class="card-widget bg-70">
+            <div class="p-head">
+              <strong class="tit">점포의견취합</strong>
+              <button type="button" class="em-btn btn-new-write"><em class="icon-plus-sm"></em>신규 작성</button>
+            </div>
+            <div class="p-body">
+              <div class="no-scroll-wp">
+                <div class="store-opinion-wp">
+                  <div class="card-list-wp">
+                    <ul class="card-list">
+                        <li>
+                            <span class="em-banner-badge ing-state"><em class="ing">취합중</em></span><!--
+                                미처리 : yet,
+                                취합중, 진행중, 처리중 : ing, 
+                                답변완료, 완료 : end  클래스 추가
+                            -->
+                            <a href="" class="em-cont ellipsis"> 12/23 행사상품 토마호크스테이크 추가발주</a>
+                            <span class="headcount"><strong class="ing">3</strong><!--취합중: ing, 완료: end 클래스 추가--> / 125</span>
+                        </li>
+                        <li>
+                            <span class="em-banner-badge ing-state"><em class="ing">취합중</em></span>
+                            <a href="" class="em-cont ellipsis"> 12/20 풀무원 물만두풀무원 물만두풀무원 물만두풀무원 물만두풀무원 물만두풀무원 물만두풀무원 물만두 700g</a>
+                            <span class="headcount"><strong class="ing">63</strong><!--취합중: ing, 완료: end 클래스 추가--> / 125</span>
+                        </li>
+                        <li>
+                            <span class="em-banner-badge ing-state"><em class="end">완료</em></span>
+                            <a href="" class="em-cont ellipsis"> 12/18 풀무원 물만두풀무원 물만두풀무원 물만두풀무원 물만두풀무원 물만두풀무원 물만두풀무원 물만두 700g</a>
+                            <span class="headcount"><strong class="end">53</strong><!--취합중: ing, 완료: end 클래스 추가--> / 78</span>
+                        </li>
+                        <li>
+                            <span class="em-banner-badge ing-state"><em class="end">완료</em></span>
+                            <a href="" class="em-cont ellipsis"> 12/18 풀무원 물만두풀무원 물만두풀무원 물만두풀무원 물만두풀무원 물만두풀무원 물만두풀무원 물만두 700g</a>
+                            <span class="headcount"><strong class="end">63</strong><!--취합중: ing, 완료: end 클래스 추가--> / 75</span>
+                        </li>
+                    </ul>
+                  </div>
+                </div>  
+              </div><!--//no-scroll-wp-->
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//점포의견취합-->
+
+        <!--고객의 소리-->
+         <article class="card-widget-wp">
+          <div class="card-widget bg-70">
+            <div class="p-head h-long"><!--고객의 소리와 같이 타이틀 영역에 들어가는 내용이 많을 경우 p-head에  h-long 클래스 추가-->
+              <strong class="tit">고객의 소리</strong><span class="s-tit ellipsis">구로구로구로구로구로구로구로구로구로점</span>
+              <div class="p-date"><em>22.03.09 16:00 ~ 22.03.10 14:00</em></div>
+            </div>
+            <div class="p-body">
+              <div class="card-scroll-wp">
+                <div class="card-list-wp">
+                    <ul class="card-list">
+                        <li class="em-yet"><!--미처리인 경우 em-yet 클래스 추가-->
+                            <span class="em-banner-badge ing-state"><em class="yet">미처리</em></span><!--
+                                미처리 : yet,
+                                진행중, 처리중 : ing, 
+                                답변완료, 완료 : end  클래스 추가
+                            -->
+                            <em class="em-icon tel"></em><!--전화접수 : tel, 인터넷접수 : online 클래스 추가-->
+                            <a href="" class="em-cont ellipsis">이마트 캐셔 직원이 친절해서 칭찬합니다. 이마트 성수점에 3층에 있는 직원이에요 이름은</a>
+                            <span class="date">22.03.07</span>
+                        </li>
+                        <li>
+                            <span class="em-banner-badge ing-state"><em class="ing">처리중</em></span>
+                            <em class="em-icon online"></em>
+                            <a href="" class="em-cont ellipsis">이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요</a>
+                            <span class="date">22.03.07</span>
+                        </li>
+                        <li>
+                            <span class="em-banner-badge ing-state"><em class="end">답변완료</em></span>
+                            <em class="em-icon tel"></em>
+                            <a href="" class="em-cont ellipsis">이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요</a>
+                            <span class="date">22.03.07</span>
+                        </li>
+                        <li>
+                            <span class="em-banner-badge ing-state"><em class="end">답변완료</em></span>
+                            <em class="em-icon online"></em>
+                            <a href="" class="em-cont ellipsis">이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요</a>
+                            <span class="date">22.03.07</span>
+                        </li>
+                        <li>
+                            <span class="em-banner-badge ing-state"><em class="end">답변완료</em></span>
+                            <em class="em-icon online"></em>
+                            <a href="" class="em-cont ellipsis">이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요</a>
+                            <span class="date">22.03.07</span>
+                        </li>
+                        <li>
+                            <span class="em-banner-badge ing-state"><em class="end">답변완료</em></span>
+                            <em class="em-icon online"></em>
+                            <a href="" class="em-cont ellipsis">이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요</a>
+                            <span class="date">22.03.07</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>       
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//고객의 소리-->
+
+        <!--고객의 소리-->
+        <article class="card-widget-wp">
+          <div class="card-widget bg-70">
+            <div class="p-head h-long"><!--고객의 소리의 경우 p-head에  h-long 클래스 추가-->
+              <strong class="tit">고객의 소리</strong><span class="s-tit ellipsis">구로점</span>
+              <div class="p-date"><em>22.03.09 16:00 ~ 22.03.10 14:00</em></div>
+            </div>
+            <div class="p-body">
+              <div class="card-scroll-wp">
+                <div class="card-list-wp">
+                    <ul class="card-list">
+                        <li class="em-yet"><!--미처리인 경우 em-yet 클래스 추가-->
+                            <span class="em-banner-badge ing-state"><em class="yet">미처리</em></span><!--
+                                미처리 : yet,
+                                진행중, 처리중 : ing, 
+                                답변완료, 완료 : end  클래스 추가
+                            -->
+                            <em class="em-icon tel"></em><!--전화접수 : tel, 인터넷접수 : online 클래스 추가-->
+                            <a href="" class="em-cont ellipsis">이마트 캐셔 직원이 친절해서 칭찬합니다. 이마트 성수점에 3층에 있는 직원이에요 이름은</a>
+                            <span class="date">22.03.07</span>
+                        </li>
+                        <li>
+                            <span class="em-banner-badge ing-state"><em class="end">답변완료</em></span>
+                            <em class="em-icon online"></em>
+                            <a href="" class="em-cont ellipsis">이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요</a>
+                            <span class="date">22.03.07</span>
+                        </li>
+                        <li>
+                            <span class="em-banner-badge ing-state"><em class="end">답변완료</em></span>
+                            <em class="em-icon online"></em>
+                            <a href="" class="em-cont ellipsis">이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요</a>
+                            <span class="date">22.03.07</span>
+                        </li>
+                        <li>
+                            <span class="em-banner-badge ing-state"><em class="end">답변완료</em></span>
+                            <em class="em-icon online"></em>
+                            <a href="" class="em-cont ellipsis">이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요</a>
+                            <span class="date">22.03.07</span>
+                        </li>
+                        <li>
+                            <span class="em-banner-badge ing-state"><em class="end">답변완료</em></span>
+                            <em class="em-icon online"></em>
+                            <a href="" class="em-cont ellipsis">이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요</a>
+                            <span class="date">22.03.07</span>
+                        </li>
+                        <li>
+                            <span class="em-banner-badge ing-state"><em class="end">답변완료</em></span>
+                            <em class="em-icon online"></em>
+                            <a href="" class="em-cont ellipsis">이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요이마트 입구에 비둘기가 너무 많아요</a>
+                            <span class="date">22.03.07</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>       
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//고객의 소리-->
+
+        <!--뉴스-->
+        <article class="card-widget-wp">
+          <div class="card-widget bg-70">
+            <div class="p-head">
+              <strong class="tit">뉴스</strong>
+              <div class="p-date"><em>last updated 2022.03.14 16:00</em></div>
+              <div class="btn-refresh"><button class="em-icon-refresh"></button></div>
+            </div>
+            <div class="p-body">
+              <div class="news-list-wp">
+                <div class="thumb-news">
+                    <a href="">
+                        <img src="../../images/emart/pc/temp-thumb.png"><!--임시-->
+                        <div class="thumb-info">
+                            <p class="txt ellipsis line-clamp-2">이마트, 전문셰프가 직업개발하는 피코크전문셰프가 직접개발하는 피코크전문셰프가 직접개발하는 피코크</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="list-news">
+                    <ul>
+                        <li> <a href="" class="ellipsis">이마트, 장바구니 물가안정장바구니 물가안정장바구니 물가안정장바구니 물가안정장바구니 물가안정 </a></li>
+                        <li> <a href="" class="ellipsis">이마트, 봄라운딩위한 혜택이 풍성, 골프</a></li>
+                        <li> <a href="" class="ellipsis">이마트, 장바구니 물가안정장바구니 물가안정장바구니 물가안정장바구니 물가안정장바구니 물가안정 </a></li>
+                        <li> <a href="" class="ellipsis">이마트, 장바구니 물가안정장바구니 물가안정장바구니 물가안정장바구니 물가안정장바구니 물가안정 </a></li>
+                    </ul>
+                </div><!--//list-news-->
+              </div>
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//뉴스-->
+
+        <!--e소리 키워드-->
+        <article class="card-widget-wp">
+          <div class="card-widget bg-70">
+            <div class="p-head">
+              <strong class="tit">e소리 키워드</strong>
+              <div class="p-date"><em>22.03.09 ~ 22.03.10</em></div>
+            </div>
+            <div class="p-body">
+              <div class="card-list-wp">
+                <ul class="card-list e-keyword"><!--e소리 키워드 랭킹 리스트 일 때 e-keyword 클래스 추가-->
+                    <li>
+                        <span class="em-rank">1</span>
+                        <a href="" class="em-cont ellipsis">노브랜드 보조배터리 폭파노브랜드 보조배터리 </a>
+                        <em class="em-status up"></em><!--오름 : up, 내림 : down, 기본은 동일 -->
+                    </li>
+                    <li>
+                        <span class="em-rank">2</span>
+                        <a href="" class="em-cont ellipsis">2022년 3월 이마트 휴무일 2022년 3월 이마트 휴무일 2022년 3월 이마트 휴무일 2022년 3월 이마트 휴무일</a>
+                        <em class="em-status"></em>
+                    </li>
+                    <li>
+                        <span class="em-rank">3</span>
+                        <a href="" class="em-cont ellipsis">2022년 3월 이마트 휴무일</a>
+                        <em class="em-status down"></em>
+                    </li>
+                    <li>
+                        <span class="em-rank">4</span>
+                        <a href="" class="em-cont ellipsis">2022년 3월 이마트 휴무일</a>
+                        <em class="em-status up"></em>
+                    </li>
+                    <li>
+                        <span class="em-rank">5</span>
+                        <a href="" class="em-cont ellipsis">2022년 3월 이마트 휴무일</a>
+                        <em class="em-status up"></em>
+                    </li>
+                </ul>
+              </div>
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//e소리 키워드-->
+
+        <!--매출실적 - 화살표 아이콘 누르면 레이어 팝업 열림-->
+        <article class="card-widget-wp">
+          <div class="card-widget bg-70">
+            <div class="p-head">
+              <strong class="tit">매출실적</strong>
+              <div class="p-date"><em>22.03.09 ~ 22.03.10</em></div>
+            </div>
+            <div class="p-body">
+              <div class="review-divided-wp">
+                <div class="review-info">
+                    <div class="r-info on"><!--선택되면 on 클래스 추가 -->
+                        <a href="#none"  onclick="layer_open('pop01');return false;">
+                            <span class="tit">당일<em class="icon-btn-arrow"></em></span>
+                            <strong class="num">19,849</strong>
+                            <span class="unit">백만 <em class="per">+6.7%</em></span>
+                        </a>
+                    </div>
+                    <div class="r-info">
+                        <a href="#none"  onclick="layer_open('pop01');return false;">
+                          <span class="tit">전일<em class="icon-btn-arrow"></em></span>
+                          <strong class="num">29,100</strong>
+                          <span class="unit">백만<em class="per">+6.7%</em></span>
+                        </a>
+                    </div>
+                    <div class="r-info">
+                        <a href="#none"  onclick="layer_open('pop01');return false;">
+                          <span class="tit">월누계<em class="icon-btn-arrow"></em></span>
+                          <strong class="num">232</strong>
+                          <span class="unit">억 <em class="per">+6.7%</em></span>
+                        </a>    
+                    </div>
+                </div><!--//review-divided-wp-->
+              </div>
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//매출실적-->
+
+        <!--상품실적 - 자세히보기 누르면 레이어 팝업 열림-->
+        <article class="card-widget-wp">
+          <div class="card-widget bg-70">
+            <div class="p-head">
+              <strong class="tit">상품실적</strong>
+              <span class="s-tit p-long">과일과일과일과일과일</span><!--상품명 p-long 클래스 추가-->
+              <div class="alim-top-btnWp type2">
+                  <span class=""><a href="javascript:;">전일</a></span><!--선택시 on 클래스 추가-->
+                  <span class="on"><a href="javascript:;">전월</a></span>
+              </div>
+            </div>
+            <div class="p-body">
+              <div class="review-divided-wp">
+                <div class="review-info">
+                    <div class="r-info on"><!--선택되면 on 클래스 추가 -->
+                        <a href="#none">
+                            <span class="tit">실적</span>
+                            <strong class="num">79,849</strong>
+                            <span class="unit">백만 <em class="per">+6.7%</em></span>
+                        </a>
+                    </div>
+                    <div class="r-info">
+                        <a href="#none">
+                            <span class="tit">목표</span>
+                            <strong class="num">89,100</strong>
+                            <span class="unit">백만<em class="per">+6.7%</em></span>
+                        </a>
+                    </div>
+                    <div class="r-info">
+                        <a href="#none">
+                            <span class="tit">달성율</span>
+                            <strong class="num">84.6</strong>
+                            <span class="unit">%</span>
+                        </a>    
+                    </div>
+                </div>
+                <div class="r-btn-view"><a href="#none" class="pop-btn" onclick="layer_open('pop02');return false;">자세히 보기 &gt;</a></div>
+              </div>
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//상품실적-->
+
+        <!--행사 실적 3개인 경우 : 하단의 top10 보기 누르면 레이어팝업 열림-->
+        <article class="card-widget-wp"> <!--행사실적 3개가 기본, 4개가 되면 er4 클래스 추가 -->
+          <div class="card-widget bg-70">
+            <div class="p-head event"><!--event 클래스 추가 -->
+              <strong class="tit"> 2022 발렌타인데이 매장행사실적<!--발렌타인데이 매장행사실적--></strong>
+              <span class="s-tit">구로구로구로점</span>
+              <div class="p-date"><em>2022.03.09 16:00</em></div>
+            </div>
+            <div class="p-body">
+              <div class="card-review-wrap">
+                <div class="review-info-wp">
+                    <div class="review-info">
+                        <div class="r-info">
+                            <span class="tit">누적매출</span>
+                            <strong class="num">62,094</strong>
+                            <span class="unit">백만</span>
+                        </div>
+                        <div class="r-info">
+                            <span class="tit">전일매출</span>
+                            <strong class="num str">2,100</strong>
+                            <span class="unit">백만</span>
+                        </div>
+                        <div class="r-info">
+                            <span class="tit">신장율</span>
+                            <strong class="num">2.6</strong>
+                            <span class="unit">%</span>
+                        </div>
+                    </div>
+                    <div class="line-graph-wp">
+                        그래프영역
+                    </div>
+                    <div class="r-btn-view"><a href="#none" class="pop-btn" onclick="layer_open('pop03');return false;">Top10 상품보기 &gt;</a></div>
+                </div>
+              </div>
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//행사 실적-->
+
+        <!--행사 실적 4개인 경우-->
+        <article class="card-widget-wp er4"> <!--행사실적 3개가 기본, 4개가 되면 er4 클래스 추가 -->
+          <div class="card-widget bg-70">
+            <div class="p-head event"><!--event 클래스 추가 -->
+              <strong class="tit"> 2022 발렌타인데이 매장행사실적<!--발렌타인데이 매장행사실적--></strong>
+              <div class="p-date"><em>2022.03.09 16:00</em></div>
+            </div>
+            <div class="p-body">
+              <div class="card-review-wrap">
+                <div class="review-info-wp">
+                  <div class="review-info">
+                      <div class="r-info">
+                          <span class="tit">계획</span>
+                          <strong class="num">2,094</strong>
+                          <span class="unit">억</span>
+                      </div>
+                      <div class="r-info">
+                          <span class="tit">실적</span>
+                          <strong class="num str">2,100</strong><!--빨간색 강조는 str 클래스 추가-->
+                          <span class="unit">억</span>
+                      </div>
+                      <div class="r-info">
+                          <span class="tit">달성</span>
+                          <strong class="num">100.3</strong>
+                          <span class="unit">%</span>
+                      </div>
+                      <div class="r-info">
+                          <span class="tit">신장</span>
+                          <strong class="num">12.6</strong>
+                          <span class="unit">%</span>
+                      </div>
+                  </div>
+                  <div class="line-graph-wp">
+                      그래프영역
+                  </div>
+                  <div class="r-btn-view"><a href="#none" onclick="layer_open('pop04');return false;">Top10 상품보기 &gt;</a></div>
+                </div>
+              </div><!--//card-review-wrap-->
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//행사 실적-->
+
+        <!--업무도움방 basic-work-help -->
+        <article class="card-widget-wp basic-work-help"> 
+          <div class="card-widget bg-70">
+            <div class="p-head">
+              <strong class="tit">업무도움방</strong>
+            </div>
+            <div class="p-body">
+              <div class="round-tab-wp">
+                <!-- 탭메뉴 : swiper 사용하는 경우 sw-menu 추가-->
+                <div class="swiper-container r-tab-menu sw-menu">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <div class="tmenu-wp">
+                        <a href="#none"><span class="tit">축산  &gt;  행사지침/매뉴얼</span></a>
+                      </div>
+                    </li>
+                    <li class="swiper-slide">
+                      <div class="tmenu-wp">
+                        <a href="#none"><span class="tit">축산  &gt; 업무연락</span></a>
+                      </div>
+                    </li>
+                    <li class="swiper-slide">
+                      <div class="tmenu-wp">
+                        <a href="#none"><span class="tit">축산  &gt; 업무연락</span></a>
+                      </div>
+                    </li>
+                    <li class="swiper-slide">
+                      <div class="tmenu-wp">
+                        <a href="#none"><span class="tit">가공식품 &gt; 메뉴4444</span></a>
+                      </div>
+                    </li>
+                    <li class="swiper-slide">
+                      <div class="tmenu-wp">
+                        <a href="#none"><span class="tit">가공식품 &gt; 메뉴4444</span></a>
+                      </div>
+                    </li>
+                  </ul>
+                </div><!--//r-tab-menu-->
+                <!--//탭메뉴-->
+                <!-- 탭패널 -->
+                <div class="tab-content-wp">
+                  <div class="tab-item">
+                    <!--업무도움방 리스트--> 
+                    <div class="basic-work-help-listWp">
+                      <div class="card-scroll-wp">
+                        <ul class="basic-work-help-list">
+                          <li>
+                              <div class="list-wrap">
+                                  <div class="bookmark-wp"><button type="button" class="em-btn btn-bookmark on"></button></div><!--즐겨찾기 한 경우 on 클래스 추가-->
+                                  <div class="list-cont">
+                                      <a href=""><span class="today">Today</span><p class="ltit">(수정) 1월 1차 행사리스트 공감행사리스트 공감행사리스트 공감행사리스트 공감행사리스트 공감</p></a>
+                                      <p class="info"><span class="date">2022.01.06</span><span class="name">김소희 Chief 파트너</span>
+                                      </p>
+                                  </div>
+                                  <div class="file-view-wp">
+                                      <a href="" download><!--href = 다운로드 할 파일경로 download="파일명" 으로 다운받을 파일 네이밍을 정할 수 있음 -->
+                                        <div class="file-info">
+                                          <span>pdf</span>
+                                        </div>
+                                      </a>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="list-wrap">
+                                  <div class="bookmark-wp"><button type="button" class="em-btn btn-bookmark on"></button></div>
+                                  <div class="list-cont">
+                                      <a href=""><span class="today">Today</span><p class="ltit">(수정) 1월 1차 행사리스트 공감행사리스트 공감행사리스트 공감행사리스트 공감행사리스트 공감</p></a>
+                                      <p class="info"><span class="date">2022.01.06</span><span class="name">김소희 Chief 파트너</span>
+                                      </p>
+                                  </div>
+                                  <div class="file-view-wp">
+                                      <a href="" download>
+                                        <div class="file-info">
+                                          <span>pdf</span>
+                                        </div>
+                                      </a>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="list-wrap">
+                                  <div class="bookmark-wp"><button type="button" class="em-btn btn-bookmark"></button></div>
+                                  <div class="list-cont">
+                                      <a href=""><p class="ltit">(수정) 1월 1차 행사리스트 공감행사리스트 공감행사리스트 공감행사리스트 공감행사리스트 공감</p></a>
+                                      <p class="info"><span class="date">2022.01.06</span><span class="name">김소희 Chief 파트너</span>
+                                      </p>
+                                  </div>
+                                  <div class="file-view-wp">
+                                      <a href="">
+                                        <div class="file-info">
+                                          <span>pptx</span>
+                                        </div>
+                                      </a>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="list-wrap">
+                                  <div class="bookmark-wp"><button type="button" class="em-btn btn-bookmark on"></button></div>
+                                  <div class="list-cont">
+                                      <a href=""><span class="today">Today</span><p class="ltit">(수정) 1월 1차 행사리스트 공감행사리스트 공감행사리스트 공감행사리스트 공감행사리스트 공감</p></a>
+                                      <p class="info"><span class="date">2022.01.06</span><span class="name">김소희 Chief 파트너</span>
+                                      </p>
+                                  </div>
+                                  
+                              </div>
+                          </li>
+                          <li>
+                              <div class="list-wrap">
+                                  <div class="bookmark-wp"><button type="button" class="em-btn btn-bookmark"></button></div>
+                                  <div class="list-cont">
+                                      <a href=""><p class="ltit">(수정) 1월 1차 행사리스트 공감행사리스트 공감행사리스트 공감행사리스트 공감행사리스트 공감</p></a>
+                                      <p class="info"><span class="date">2022.01.06</span><span class="name">김소희 Chief 파트너</span>
+                                      </p>
+                                  </div>
+                                  <div class="file-view-wp">
+                                      <a href="" download>
+                                        <div class="file-info">
+                                          <span>pdf</span>
+                                        </div>
+                                      </a>
+                                  </div>
+                              </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="btn-more-wp">
+                        <a href="">더보기</a>
+                      </div>
+                    </div>
+                    <!--//업무도움방 리스트--> 
+                  </div><!--//tab-item-->
+                  <div class="tab-item">
+                      tabcontent2
+                  </div><!--//tab-item-->
+                  <div class="tab-item">
+                      tabcontent3
+                  </div><!--//tab-item-->
+                  <div class="tab-item">
+                      tabcontent4
+                  </div><!--//tab-item-->
+                  <div class="tab-item">
+                    tabcontent5
+                  </div><!--//tab-item-->
+                </div>
+                <!-- //탭패널 -->
+              </div><!--//round-tab-wp-->
+             
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//업무도움방-->
+
+        <!--관심상품-->
+        <article class="card-widget-wp"> 
+          <div class="card-widget bg-70">
+            <div class="p-head">
+              <strong class="tit">관심상품</strong>
+            </div>
+            <div class="p-body">
+              <div class="round-tab-wp interest-wp">
+                <!-- 탭메뉴 : swiper 사용하는 경우-->
+                <div class="swiper-container r-tab-menu sw-menu">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <div class="tmenu-wp">
+                        <a href="#none"><span class="tit">2022 설행사</span></a>
+                      </div>
+                    </li>
+                    <li class="swiper-slide">
+                      <div class="tmenu-wp">
+                        <a href="#none"><span class="tit">관심상품 그룹명22</span></a>
+                      </div>
+                    </li>
+                    <li class="swiper-slide">
+                      <div class="tmenu-wp">
+                        <a href="#none"><span class="tit">관심상품 그룹명33</span></a>
+                      </div>
+                    </li>
+                    <li class="swiper-slide">
+                      <div class="tmenu-wp">
+                        <a href="#none"><span class="tit">관심상품 그룹명 44</span></a>
+                      </div>
+                    </li>
+                    <li class="swiper-slide">
+                      <div class="tmenu-wp">
+                        <a href="#none"><span class="tit">관심상품 그룹명 55</span></a>
+                      </div>
+                    </li>
+                  </ul>
+                </div><!--//p-fold-menuWp-->
+                <!--//탭메뉴-->
+                <!-- 탭패널 -->
+                <div class="tab-content-wp">
+                  <div class="tab-item">
+                    <!--관심상품-->
+                    <div class="interest-list-wp">
+                        <div class="em-table-wp">
+                          <table width="100%" class="tbl-basic-bdr t-sticky">
+                              <colgroup>
+                                  <col />
+                                  <col width="110px">
+                                  <col width="56px">
+                              </colgroup>
+                              <thead>
+                                  <tr>
+                                      <th>상품명</th>
+                                      <th>상품코드</th>
+                                      <th>운영상태</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td><a href="" class="link">고산지 사과고산지 사과 4~6입 (1.3kg)고산지 사과고산지 사과 4~6입 (1.3kg)고산지 사과고산지 사과 4~6입 (1.3kg)고산지 사과고산지 사과 4~6입 (1.3kg)고산지 사과고산지 사과 4~6입 (1.3kg)</a></td>
+                                      <td><a href="" class="num">8802039230295</a><span class="btn-copy"> <button class="em-icon-copy"><em class="blind">코드복사</em></button></span></td>
+                                      <td>정상</td>
+                                  </tr>
+                                  <tr>
+                                      <td><a href="" class="link">고산지 사과 4~6입 (1.3kg)</a></td>
+                                      <td><a href="" class="num">8802039230295</a><span class="btn-copy"> <button class="em-icon-copy"><em class="blind">코드복사</em></button></span></td>
+                                      <td>정상</td>
+                                  </tr>
+                                  <tr>
+                                      <td><a href="" class="link">고산지 사과 4~6입 (1.3kg)</a></td>
+                                      <td><a href="" class="num">8802039230295</a><span class="btn-copy"><button class="em-icon-copy"><em class="blind">코드복사</em></button></span></td>
+                                      <td>정상</td>
+                                  </tr>
+                                  <tr>
+                                      <td><a href="" class="link">고산지 사과 4~6입 (1.3kg)</a></td>
+                                      <td><a href="" class="num">8802039230295</a><span class="btn-copy"><button class="em-icon-copy"><em class="blind">코드복사</em></button></span></td>
+                                      <td>스크랩예정</td>
+                                  </tr>
+                                  <tr>
+                                      <td><a href="" class="link">고산지 사과 4~6입 (1.3kg)</a></td>
+                                      <td><a href="" class="num">8802039230295</a><span class="btn-copy"><button class="em-icon-copy"><em class="blind">코드복사</em></button></span></td>
+                                      <td>정상</td>
+                                  </tr>
+                                  <tr>
+                                      <td><a href="" class="link">고산지 사과 4~6입 (1.3kg)</a></td>
+                                      <td><a href="" class="num">8802039230295</a><span class="btn-copy"><button class="em-icon-copy"><em class="blind">코드복사</em></button></span></td>
+                                      <td>정상</td>
+                                  </tr>
+                                  <tr>
+                                      <td><a href="" class="link">고산지 사과 4~6입 (1.3kg)</a></td>
+                                      <td><a href="" class="num">8802039230295</a><span class="btn-copy"><button class="em-icon-copy"><em class="blind">코드복사</em></button></span></td>
+                                      <td>정상</td>
+                                  </tr>
+                                  
+                                  <tr>
+                                      <td><a href="" class="link">고산지 사과 4~6입 (1.3kg)</a></td>
+                                      <td ><a href="" class="num">8802039230295</a><span class="btn-copy"> <button class="em-icon-copy"><em class="blind">코드복사</em></button></span></td>
+                                      <td >정상</td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                        </div>                      
+                    </div><!--//interest-list-wp-->
+                    <!--//관심상품-->
+                  </div><!--//tab-item-->
+                  <div class="tab-item">
+                    tabcontent22222
+                  </div><!--//tab-item-->
+                  <div class="tab-item">
+                    tabcontent3
+                  </div><!--//tab-item-->
+                  <div class="tab-item">
+                    tabcontent4
+                  </div><!--//tab-item-->
+                  <div class="tab-item">
+                    tabcontent5
+                  </div><!--//tab-item-->
+                </div>
+                <!-- //탭패널 -->
+              </div><!--//interest-wp-->
+             
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//관심상품-->
+
+        <!--시세조회-->
+        <article class="card-widget-wp">
+          <div class="card-widget bg-70">
+            <div class="p-head">
+              <strong class="tit">시세조회</strong>
+              <div class="p-date"><em>last updated 2022.03.09</em></div>
+            </div>
+            <div class="p-body">
+              <div class="marketPrice-search-wp">
+                <div class="em-table-wp">
+                    <table width="100%" class="tbl-basic-bdr">
+                        <colgroup>
+                            <col />
+                            <col width="12%">
+                            <col width="11%">
+                            <col width="21%">
+                            <col width="21%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="align-left">품목명</th>
+                                <th>단위</th>
+                                <th>등급</th>
+                                <th class="align-left">금일시세<span class="sear-stit">(전일대비)</span></th>
+                                <th class="align-left">금주평균<span class="sear-stit">(전주대비)</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                              <td class="align-left">사과 (로얄부사) </td>
+                              <td>20kg</td>
+                              <td>특</td>
+                              <td class="align-left"><strong class="search-price">34,330</strong><span class="search-num up">1,750</span><!--시세가 오른경우 up 클래스 추가 , 낮을 경우 down 클래스 추가, 동일한 경우가 기본 --></td>
+                              <td class="align-left"><strong class="search-price">24,330</strong><span class="search-num up">750</span><!--시세가 오른경우 up 클래스 추가 , 낮을 경우 down 클래스 추가 --></td>
+                            </tr>
+                            <tr>
+                              <td class="align-left">고산지 사과 4~6입 고산지고산지</td>
+                              <td>122kg</td>
+                              <td>상</td>
+                              <td class="align-left"><strong class="search-price">134,330</strong><span class="search-num down">21,750</span><!--시세가 오른경우 up 클래스 추가 , 낮을 경우 down 클래스 추가 --></td>
+                              <td class="align-left"><strong class="search-price">314,330</strong><span class="search-num down">21,750</span><!--시세가 오른경우 up 클래스 추가 , 낮을 경우 down 클래스 추가 --></td>
+                            </tr>
+                            <tr>
+                              <td class="align-left">사과 (로얄부사) </td>
+                              <td>20kg</td>
+                              <td>특</td>
+                              <td class="align-left"><strong class="search-price">134,330</strong><span class="search-num up">31,750</span><!--시세가 오른경우 up 클래스 추가 , 낮을 경우 down 클래스 추가 --></td>
+                              <td class="align-left"><strong class="search-price">124,330</strong><span class="search-num up">43,750</span><!--시세가 오른경우 up 클래스 추가 , 낮을 경우 down 클래스 추가 --></td>
+                            </tr>
+                            <tr>
+                              <td class="align-left">사과 (로얄부사) </td>
+                              <td>20kg</td>
+                              <td>특</td>
+                              <td class="align-left"><strong class="search-price">34,330</strong><span class="search-num down">1,750</span><!--시세가 오른경우 up 클래스 추가 , 낮을 경우 down 클래스 추가 --></td>
+                              <td class="align-left"><strong class="search-price">24,330</strong><span class="search-num up">3,750</span><!--시세가 오른경우 up 클래스 추가 , 낮을 경우 down 클래스 추가 --></td>
+                            </tr>
+                            <tr>
+                              <td class="align-left">사과 (로얄부사) </td>
+                              <td>20kg</td>
+                              <td>특</td>
+                              <td class="align-left"><strong class="search-price">34,330</strong><span class="search-num up">1,750</span><!--시세가 오른경우 up 클래스 추가 , 낮을 경우 down 클래스 추가 --></td>
+                              <td class="align-left"><strong class="search-price">24,330</strong><span class="search-num down">3,750</span><!--시세가 오른경우 up 클래스 추가 , 낮을 경우 down 클래스 추가 --></td>
+                            </tr>
+                            <tr>
+                              <td class="align-left">사과 (로얄부사) </td>
+                              <td>20kg</td>
+                              <td>특</td>
+                              <td class="align-left"><strong class="search-price">34,330</strong><span class="search-num up">1,750</span><!--시세가 오른경우 up 클래스 추가 , 낮을 경우 down 클래스 추가 --></td>
+                              <td class="align-left"><strong class="search-price">24,330</strong><span class="search-num up">3,750</span><!--시세가 오른경우 up 클래스 추가 , 낮을 경우 down 클래스 추가 --></td>
+                            </tr>
+                            <tr>
+                              <td class="align-left">사과 (로얄부사) </td>
+                              <td>20kg</td>
+                              <td>특</td>
+                              <td class="align-left"><strong class="search-price">34,330</strong><span class="search-num"> 0</span></td>
+                              <td class="align-left"><strong class="search-price">24,330</strong><span class="search-num up">3,750</span><!--시세가 오른경우 up 클래스 추가 , 낮을 경우 down 클래스 추가 --></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+              </div><!--//marketPrice-search-wp-->
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//시세조회-->
+
+        <!--결재 현황-->
+        <article class="card-widget-wp">
+          <div class="card-widget bg-70">
+            <div class="p-head">
+              <strong class="tit">결재 현황</strong>
+              <div class="p-date"><em>22.03.09 16:00 ~ 22.03.10</em></div>
+            </div>
+            <div class="p-body">
+              <div class="card-approval-wp">
+                <div class="em-table-wp">
+                    <table width="100%" class="tbl-basic-bdr">
+                        <colgroup>
+                            <col width="auto"/>
+                            <col width="18%"/>
+                            <col width="18%"/>
+                            <col width="18%"/>
+                            <col width="18%"/>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>미결</th>
+                                <th>보류</th>
+                                <th>완료</th>
+                                <th class="ft-700">총</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                              <th class="align-left">DWP 전자결재</th>
+                              <td>3</td>
+                              <td>2</td>
+                              <td>16</td>
+                              <td><a href="" class="total-num">21</a></td>
+                          </tr>
+                          <tr>
+                              <th class="align-left">eAccounting</th>
+                              <td>1</td>
+                              <td>4</td>
+                              <td>11</td>
+                              <td><a href="" class="total-num">16</a></td>
+                          </tr>
+                          <tr>
+                              <th class="align-left">블라썸결재</th>
+                              <td>1</td>
+                              <td>4</td>
+                              <td>11</td>
+                              <td><a href="" class="total-num">16</a></td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+              </div><!--//card-approval-wp-->
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//결재 현황-->
+
+      <!--//카드 위젯 모음-->
+
+        <!--하단 위젯 추가 버튼-->
+        <div class="widget-add-btn-wp">
+          <a href=""><em class="icon-plus"></em><span>위젯추가</span></a>
+        </div>
+        <!--//하단 위젯 추가 버튼-->
+			</section><!--//portal-content-->
+		</div><!--//portalCont-wp-->
+	</div><!--//#container-->
+
+  <footer id="footer">
+    <div class="footer-wp">
+      <div class="foot-menuWp">
+        <ul class="foot-menu">
+          <li class="on"><!--선택되면 on 클래스 추가-->
+            <a href="">
+              <em class="ico-ft01"></em>
+              <span>대시보드</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <em class="ico-ft02"></em>
+              <span class="long">시스템바로가기</span><!--시스템바로가기의 경우만 long 클래스 추가-->
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <em class="ico-ft03"></em>
+              <span>업무도움방</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <em class="ico-ft04"></em>
+              <span>전자결재</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+
+<!--======레이어 팝업 모음=========-->
+  <!--매출실적 화살표영역 누르면 나오는 팝업 : 상세 매출정보-->
+  <div class="pop-wrap" id="pop01">
+    <div class="bg"></div>
+    <div class="popup">
+      <div class="popup-con">
+        <div class="pop-head"><strong>당일 매출실적</strong></div>
+        <div class="pop-cont">
+          <div class="pop-graph-wp">
+            <strong class="g-tit">전체 매출실적</strong>
+            <!--임시 그래프 영역-->
+            <div class="bar-graph-wp" style="width:100%;background:lightgoldenrodyellow;height:186px;">
+            </div>
+            <!--//임시 그래프 영역-->
+          </div><!--//pop-graph-wp-->
+          <!--점포순위-->
+          <div class="review-detail-wp">
+            <div class="review-tit-wp">
+              <strong class="tit">점포순위</strong>
+              <span class="stit">매출(백만), 신장율</span>
+            </div>
+            <div class="round-tab-wp">
+              <!-- 탭메뉴 : swiper 사용하는 경우 sw-menu 추가-->
+              <div class="swiper-container r-tab-menu sw-menu">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">전체</span></a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">A타입</span></a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">B타입</span></a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">C타입</span></a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">D타입</span></a>
+                    </div>
+                  </li>
+                </ul>
+              </div><!--//r-tab-menu-->
+              <!--//탭메뉴-->
+              <!-- 탭패널 -->
+              <div class="tab-content-wp">
+                <div class="tab-item">
+                  <!--점포 순위-->
+                  <div class="rank-list-wp store">
+                    <ul>
+                        <li><em>1</em><span class="store-name">왕십리지점</span><span class="num">19,450</span><span class="per">+7.0%</span></li><!-- 기본이 + 상태이며, - 일때 minus 클래스 추가-->
+                        <li><em>2</em><span class="store-name">성수지점</span><span class="num">29,450</span><span class="per">+7.0%</span></li>
+                        <li><em>3</em><span class="store-name">왕십리지점</span><span class="num">9,450</span><span class="per">+7.0%</span></li>
+                        <li><em>4</em><span class="store-name">왕십리지점</span><span class="num">19,450</span><span class="per">+7.0%</span></li>
+                        <li><em>5</em><span class="store-name">왕십리지점</span><span class="num">44,540</span><span class="per">+27.0%</span></li>
+                        <li><em>6</em><span class="store-name">왕십리지점</span><span class="num">19,450</span><span class="per minus">-7.0%</span></li>
+                        <li><em>7</em><span class="store-name">왕십리왕십리지점</span><span class="num">19,450</span><span class="per">+7.0%</span></li>
+                        <li><em>8</em><span class="store-name">왕십리지점</span><span class="num">19,450</span><span class="per">+7.0%</span></li>
+                        <li><em>9</em><span class="store-name">왕십리지점</span><span class="num">19,450</span><span class="per">+7.0%</span></li>
+                        <li><em>10</em><span class="store-name">왕십리지점</span><span class="num">19,450</span><span class="per">+7.0%</span></li>
+                    </ul>
+                  </div>
+                  <!--//점포 순위-->
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                    tabcontent2
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                    tabcontent3
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                    tabcontent4
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                  tabcontent5
+                </div><!--//tab-item-->
+              </div>
+              <!-- //탭패널 -->
+            </div><!--//round-tab-wp-->
+
+          </div>
+          <!--//포순위-->
+        </div>
+      </div>
+      <a href="#" class="pop-close"><span class="blind">닫기</span></a>
+    </div>
+  </div>
+
+  <!--상품실적 자세히보기 누르면 나오는 팝업 -->
+  <div class="pop-wrap" id="pop02">
+    <div class="bg"></div>
+    <div class="popup">
+      <div class="popup-con">
+        <div class="pop-head"><strong>전일 상품 실적</strong></div>
+        <div class="pop-cont">
+         
+          <!--상품실적-->
+          <div class="review-goods-wp">
+            <div class="round-tab-wp interest-wp">
+              <div class="r-tab-menu r-col2"><!--2개 탭일 경우 r-col2 추가-->
+                <ul>
+                  <li>
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">Top 10 상품</span></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">관심상품</span></a>
+                    </div>
+                  </li>
+                </ul>
+              </div><!--//r-tab-menu-->
+              <!--//탭메뉴-->
+              <!-- 탭패널 -->
+              <div class="tab-content-wp">
+                <div class="tab-item">
+                  <!--Top 10 상품-->
+                  <div class="rank-list-wp top10">
+                    <ul>
+                        <li><em>1</em><a href="">(S)나주전통배</a></li>
+                        <li><em>2</em><a href="">유명산지 배</a></li>
+                        <li><em>3</em><a href="">유명산지 사과</a></li>
+                        <li><em>4</em><a href="">유명산지 사과</a></li>
+                        <li><em>5</em><a href="">유명산지 사과</a></li>
+                        <li><em>6</em><a href="">유명산지 사과</a></li>
+                        <li><em>7</em><a href="">유명산지 사과</a></li>
+                        <li><em>8</em><a href="">유명산지 사과</a></li>
+                        <li><em>9</em><a href="">유명산지 사과유명산지 사과유명산지 사과유명산지 사과유명산지 사과</a></li>
+                        <li><em>10</em><a href="">유명산지 사과산지 사과산지 사과산지 사과</a></li>
+                    </ul>
+                  </div>
+                  <!--//Top 10 상품-->
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                  <!--관심상품-->
+                  <div class="interest-list-wp em-pop"><!--em-pop 클래스 추가-->
+                    <div class="em-table-wp">
+                        <table width="100%" class="tbl-basic-bdr">
+                            <colgroup>
+                                <col width="56%"/>
+                                <col width="24%"/>
+                                <col width="20%"/>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="align-left">상품</th>
+                                    <th class="align-center">매출(만)</th>
+                                    <th class="align-center">판매진도율</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>(G)컬럼비아 등산화 BM3619(G)컬럼비아 등산화</td>
+                                    <td class="align-center">22,300</td>
+                                    <td class="align-center">93%</td>
+                                </tr>
+                                <tr>
+                                    <td>(G)컬럼비아 등산화 BM3619</td>
+                                    <td class="align-center">2,300</td>
+                                    <td class="align-center">93%</td>
+                                </tr>
+                                <tr>
+                                    <td>(G)유아헤비다운후드</td>
+                                    <td class="align-center">2,300</td>
+                                    <td class="align-center">93%</td>
+                                </tr>
+                                <tr>
+                                    <td>4(G)유아헤비다운후드</td>
+                                    <td class="align-center">99,300</td>
+                                    <td class="align-center">83.8%</td>
+                                </tr>
+                                <tr>
+                                    <td>5(G)유아헤비다운후드</td>
+                                    <td class="align-center">99,300</td>
+                                    <td class="align-center">83.8%</td>
+                                </tr>
+                                <tr>
+                                    <td>6(G)유아헤비다운후드</td>
+                                    <td class="align-center">99,300</td>
+                                    <td class="align-center">83.8%</td>
+                                </tr>
+                                <tr>
+                                    <td>6(G)유아헤비다운후드</td>
+                                    <td class="align-center">99,300</td>
+                                    <td class="align-center">83.8%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                  </div><!--//interest-list-wp-->
+                  <!--//관심상품-->
+                </div><!--//tab-item-->
+              </div>
+              <!-- //탭패널 -->
+            </div><!--//round-tab-wp-->
+          </div>
+          <!--//상품실적-->
+        </div>
+      </div>
+      <a href="#" class="pop-close"><span class="blind">닫기</span></a>
+    </div>
+  </div>
+
+  <!--발렌타인데이 매장행사 자세히보기 누르면 나오는 팝업 : top10 정보 -->
+  <div class="pop-wrap" id="pop03">
+    <div class="bg"></div>
+    <div class="popup">
+      <div class="popup-con">
+        <div class="pop-head"><strong>2022 발렌타인데이 매장행사 실적</strong></div>
+        <div class="pop-cont">
+          <!--top10 점포순위-->
+          <div class="review-goods-wp top10">
+            <div class="round-tab-wp">
+              <!-- 탭메뉴 : swiper 사용하는 경우 sw-menu 추가-->
+              <div class="swiper-container r-tab-menu sw-menu">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">신선1</span></a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">신선2</span></a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">신선3</span></a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">가공</span></a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">라이프</span></a>
+                    </div>
+                  </li>
+                </ul>
+              </div><!--//r-tab-menu-->
+              <!--//탭메뉴-->
+              <!-- 탭패널 -->
+              <div class="tab-content-wp">
+                <div class="tab-item">
+                  <!--점포 순위-->
+                  <div class="rank-list-wp">
+                    <ul>
+                        <li><em>1</em>(S)나주전통배</li>
+                        <li><em>2</em>유명산지 배</li>
+                        <li><em>3</em>유명산지 사과</li>
+                        <li><em>4</em>유명산지 사과</li>
+                        <li><em>5</em>유명산지 사과</li>
+                        <li><em>6</em>유명산지 사과</li>
+                        <li><em>7</em>유명산지 사과</li>
+                        <li><em>8</em>유명산지 사과</li>
+                        <li><em>9</em>유명산지 사과유명산지 사과유명산지 사과유명산지 사과유명산지 사과</li>
+                        <li><em>10</em>유명산지 사과산지 사과산지 사과산지 사과</li>
+                    </ul>
+                </div>
+                  <!--//점포 순위-->
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                    tabcontent2
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                    tabcontent3
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                    tabcontent4
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                  tabcontent5
+                </div><!--//tab-item-->
+              </div>
+              <!-- //탭패널 -->
+            </div><!--//round-tab-wp-->
+          </div>
+          <!--//top10 점포순위-->
+        </div>
+      </div>
+      <a href="#" class="pop-close"><span class="blind">닫기</span></a>
+    </div>
+  </div>
+  
+  <!--발렌타인데이 매장행사 자세히보기 누르면 나오는 팝업 : top10 정보 -->
+  <div class="pop-wrap" id="pop04">
+    <div class="bg"></div>
+    <div class="popup">
+      <div class="popup-con">
+        <div class="pop-head"><strong>2022 발렌타인데이 매장행사 실적</strong></div>
+        <div class="pop-cont">
+          <!--top10 점포순위-->
+          <div class="review-goods-wp top10">
+            <div class="round-tab-wp">
+              <!-- 탭메뉴 : swiper 사용하는 경우 sw-menu 추가-->
+              <div class="swiper-container r-tab-menu sw-menu">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">가공</span></a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">신선2</span></a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">신선3</span></a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">축산</span></a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">라이프</span></a>
+                    </div>
+                  </li>
+                </ul>
+              </div><!--//r-tab-menu-->
+              <!--//탭메뉴-->
+              <!-- 탭패널 -->
+              <div class="tab-content-wp">
+                <div class="tab-item">
+                  <!--점포 순위-->
+                  <div class="rank-list-wp">
+                    <ul>
+                        <li><em>1</em>(S)나주전통배</li>
+                        <li><em>2</em>유명산지 배</li>
+                        <li><em>3</em>유명산지 사과</li>
+                        <li><em>4</em>유명산지 사과</li>
+                        <li><em>5</em>유명산지 사과</li>
+                        <li><em>6</em>유명산지 사과</li>
+                        <li><em>7</em>유명산지 사과</li>
+                        <li><em>8</em>유명산지 사과</li>
+                        <li><em>9</em>유명산지 사과유명산지 사과유명산지 사과유명산지 사과유명산지 사과</li>
+                        <li><em>10</em>유명산지 사과산지 사과산지 사과산지 사과</li>
+                    </ul>
+                </div>
+                  <!--//점포 순위-->
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                    tabcontent2
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                    tabcontent3
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                    tabcontent4
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                  tabcontent5
+                </div><!--//tab-item-->
+              </div>
+              <!-- //탭패널 -->
+            </div><!--//round-tab-wp-->
+          </div>
+          <!--//top10 점포순위-->
+        </div>
+      </div>
+      <a href="#" class="pop-close"><span class="blind">닫기</span></a>
+    </div>
+  </div>
+<!--//======레이어 팝업 모음=========-->
+
+
+
+</div><!--//bodyWrap-->
+</body>
+</html>
+                

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi" />
+	<title>이마트 html 퍼블리스트</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+	<style type="text/css">
+		* {margin:0; padding:0;}
+		body {background-color:#fff; font-family:"맑은 고딕", san-serif; padding:20px;}
+		caption {display:none; font-size:0; line-height:0; height:0; width:0;}
+		h1 {font-size:24px; margin-bottom:10px;}
+		.note {overflow:hidden; background-color:#eee; border:2px dashed #666; margin-bottom:20px; padding:10px;}
+		.note ul {overflow:hidden; padding-left:15px;}
+		.note ul li {list-style:bullet; font-size:12px; line-height:1.5em;}
+
+		.status {overflow:hidden; margin-bottom:10px;}
+		.status {overflow:hidden;}
+		.status li {float:left; list-style:none; margin-left:5px;}
+		.status li:first-child {margin-left:0;}
+		.status li a {display:block; font-size:11px; text-decoration:none; padding-right:5px; padding-left:5px; height:18px;}
+		.status li a:hover {background-color:#dfb8b6; color:#fff;}
+
+		section {overflow:hidden;}
+		table {width:100%; border-collapse:collapse; table-layout:fixed;}
+		th, td {word-break:break-all;}
+		tbody .end td {background-color:#ddd;}
+		tbody .modify td {background-color:#e8e9f6;}
+		tbody .mod td {background-color:#e8e9f6;}
+		tbody .mod2 td {background-color:#D2FFD2;}
+		tbody .mod3 td {background-color:lightblue;}
+		tbody .mod4 td {background:#FFD4DF;}
+		tbody .mod5 td {background-color:#FFC846;}
+		tbody .hod td {background-color:#ddd;}
+		thead th {background-color:#dcdcdc; color:#333; border:1px solid #666; font-size:12px; padding-top:5px; padding-bottom:5px;}
+		tbody td {border:1px solid #666; font-size:12px; padding:3px 6px;}
+		tbody td.start {color:#ff6028; font-weight:bold;}
+		tbody td.name {color:#555;}
+		tbody td.end {color:#0f8ce4; font-weight:bold;}
+		tbody td.status {color:#0f8ce4; font-weight:bold;}
+		tbody .center {text-align:center; padding-left:0;}
+		tbody .depth01 {font-weight:bold; text-align:center; padding-left:0;}
+		tbody .due{color:#a0a0a0; text-align:left; padding-left:10px}
+		tbody .due p{border-top:2px solid #a0a0a0; padding:5px;}
+		tbody .due p:first-child{border-top:0}
+		tbody a {text-decoration:none;}
+		tbody a:hover {text-decoration:underline;}
+		td.link{cursor:pointer;}
+
+		th:nth-child(1), td:nth-child(1) {width:7%;}
+		th:nth-child(2), td:nth-child(2) {width:11%;}
+		th:nth-child(3), td:nth-child(3) {width:8%;}
+		th:nth-child(4), td:nth-child(4) {width:8%;}
+		th:nth-child(5), td:nth-child(5) {width:5%;}
+		th:nth-child(6), td:nth-child(6) {width:11%;}
+		th:nth-child(7), td:nth-child(7) {width:5%;}
+
+
+		/* MOBILE */
+		@media screen and (max-width:768px){
+			body {padding:10px;}
+			h1 {font-size:16px;}
+			.note {display:none; overflow:hidden; line-height:0; height:0; width:0;}
+			table tbody tr td {font-size:13px;}
+			th:nth-child(3),th:nth-child(4),th:nth-child(11),th:nth-child(7), th:nth-child(8), th:nth-child(9), th:nth-child(10),td:nth-child(3),td:nth-child(4),td:nth-child(11), td:nth-child(7), td:nth-child(8), td:nth-child(9), td:nth-child(10){display:none; overflow:hidden; line-height:0; height:0; width:0;}
+
+			th:nth-child(1), td:nth-child(1) {width:3%;}
+			th:nth-child(2), td:nth-child(2) {width:3%;}
+			th:nth-child(3), td:nth-child(3) {width:8%;}
+			th:nth-child(5), td:nth-child(5) {width:1%;}
+		}
+
+		/* MENU:HOVER_COLOR */
+		table tbody tr.menu01:hover td {background-color:#A7EEFF;}
+		table tbody tr.menu02:hover td {background-color:#9DF0E1;}
+		table tbody tr.menu03:hover td {background-color:#FFD4DF;}
+		table tbody tr.menu04:hover td {background-color:#D2FFD2;}
+		table tbody tr.menu05:hover td {background-color:#FFDCFF;}
+		table tbody tr.menu06:hover td {background-color:#FAFA96;}
+		table tbody tr.menu07:hover td {background-color:#FFC846;}
+		table tbody tr.menu08:hover td {background-color:#FFE4B5;}
+		table tbody tr.menu09:hover td {background-color:#A5E3E6;}
+		table tbody tr.menu10:hover td {background-color:#d4e4f5;}
+		table tbody tr.menu11:hover td {background-color:#41ffb7;}
+		table tbody tr.menu12:hover td {background-color:#f288af;}
+		table tbody tr.menu13:hover td {background-color:#7fb2f0;}
+		table tbody tr.menu14:hover td {background-color:#eddfaf;}
+
+		/*layer 팝업 완료시 color 변경색 추가*/
+		tbody .layer td {background-color:lightblue;}
+
+
+	</style>
+
+	<script>
+		$(document).ready(function(){
+			$('.link').on('click', function(){
+				var tg = $(this).text() + '.html';
+				if(tg == ''){
+				}else{
+					window.open(''+tg+'','_blank')
+				}
+			})
+		})
+	</script>
+</head>
+
+<body>
+	<h1>MOBILE- 이마트</h1>
+	<div class="note">
+		<ul>
+			<li><strong>파일리스트의 메뉴는 항상 최신 버전으로 유지 합니다.</strong></li>
+			<li>해당 파일리스트는 직군별 협업을 위해 작성 되었습니다.</li>
+			<li><strong>프로젝트 관련 퍼블리셔 외 파일리스트 수정을 금지합니다.</strong></li>
+			<li>파일의 경로는 상대경로로 작업 합니다.</li>
+			<li><strong>업데이트 관리자:</strong> <span></span></li>
+		</ul>
+	</div>
+	<a href="pub-list.html" style="font-size: 12px;font-weight: bold;text-decoration: none;">PC 바로가기</a>
+	<br><br>
+	<section>
+		<table>
+			<caption>파일리스트</caption>
+			<thead>
+				<tr>
+					<th scope="col">1DEPTH</th>
+					<th scope="col">2DEPTH</th>
+					<th scope="col">3DEPTH</th>
+					<th scope="col">4DEPTH</th>
+					<th scope="col">TYPE</th>
+					<th scope="col">LINK</th>
+					<th scope="col">STATUS</th>
+					<th scope="col"></th>
+					<th scope="col"></th>
+					<th scope="col"></th>
+					<th scope="col">수정사항</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="menu01">
+					<td class="depth01">guide</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">guide/</td>
+					<td class="center status">ing</td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">guide/</td>
+					<td class="center status"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+				<tr class="menu02 mod">
+					<td class="depth01">업무포털 - 홈</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/home/portal-main-m</td>
+					<td class="center status">수정</td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc">20220615 시스템바로가기 부분 수정 및 카드위젯 예시 추가</td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>알림위젯 - 통합알림</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/home/alim-total</td>
+					<td class="center status"> end</td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+        <tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>알림위젯 - TO DO</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/home/alim-todo</td>
+					<td class="center status"> end</td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+        <tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>알림위젯 - TO CHECK</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/home/alim-tocheck</td>
+					<td class="center status">end</td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+        <tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>알림위젯 - 결재</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/home/alim-approval</td>
+					<td class="center status"> end</td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+        <tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>알림위젯 - 데이터없을경우 type1</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/home/alim-widget-nodata</td>
+					<td class="center status"> end</td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+        <tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>알림위젯 - 데이터없을경우 type2</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/home/alim-widget-nodata2</td>
+					<td class="center status"> end</td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>카드위젯모음(레이어팝업 포함)</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/home/card-widget-m</td>
+					<td class="center status"> end</td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+				<tr class="menu02 end">
+					<td class="depth01"></td>
+					<td>카드위젯모음 -데이터없을경우</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/home/card-widget-nodata</td>
+					<td class="center status"> end</td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+				<!--
+				<tr class="menu02">
+					<td class="depth01"></td>
+					<td>카드위젯- 레이어팝업</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/home/card-widget_pop</td>
+					<td class="center status"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>-->
+				<tr class="menu01 ">
+					<td class="depth01">업무도움방</td>
+					<td>메인</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/tmroom/tmroom-main</td>
+					<td class="center status"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+				<tr class="menu01 ">
+					<td class="depth01"></td>
+					<td>메인- 즐겨찾기 없을 경우</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/tmroom/tmroom-main-nodata</td>
+					<td class="center status"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>메인- 검색결과없을경우</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/tmroom/tmroom-main-nodata2</td>
+					<td class="center status"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+				<tr class="menu01 ">
+					<td class="depth01"></td>
+					<td></td>
+					<td>전체검색결과</td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/tmroom/srch</td>
+					<td class="center status"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td>도움방 게시판</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/tmroom/room</td>
+					<td class="center status"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td></td>
+					<td>게시판 내 검색 결과</td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/tmroom/room-srch</td>
+					<td class="center status"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td></td>
+					<td>게시글</td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/tmroom/post</td>
+					<td class="center status"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>전체명단보기(팝업)</td>
+					<td class="center"></td>
+					<td class="link">mo/tmroom/post-list</td>
+					<td class="center status"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>댓글입력</td>
+					<td class="center"></td>
+					<td class="link">mo/tmroom/post-comment</td>
+					<td class="center status"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td>답글입력</td>
+					<td class="center"></td>
+					<td class="link">mo/tmroom/post-reply</td>
+					<td class="center status"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+				<tr class="menu01">
+					<td class="depth01"></td>
+					<td></td>
+					<td>게시글 작성(팝업)</td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/tmroom/posting</td>
+					<td class="center status"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01">검색</td>
+					<td>메인</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/srch/main</td>
+					<td class="center status">end</td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/srch/main2</td>
+					<td class="center status">end</td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/srch/main3</td>
+					<td class="center status">end</td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01"></td>
+					<td>검색결과</td>
+					<td>전체</td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/srch/rst-all</td>
+					<td class="center status">end</td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+				<tr class="menu03 end">
+					<td class="depth01"></td>
+					<td></td>
+					<td>결과없음</td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/srch/rst-none</td>
+					<td class="center status">end</td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+        <!--
+				<tr class="menu04">
+					<td class="depth01">전자결재</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">e-approval</td>
+					<td class="center status"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>-->
+				<tr class="menu05 ">
+					<td class="depth01">전체시스템</td>
+					<td>메인</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/system/allsystem-main</td>
+					<td class="center status"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+				<tr class="menu05">
+					<td class="depth01"></td>
+					<td>시스템 선택</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/system/allsystem-main2</td>
+					<td class="center status"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+				<tr class="menu05">
+					<td class="depth01"></td>
+					<td>시스템 즐겨찾기 없을 때</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/system/allsystem-no</td>
+					<td class="center status"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+				<tr class="menu05">
+					<td class="depth01"></td>
+					<td>시스템 검색결과 없을 때</td>
+					<td></td>
+					<td></td>
+					<td class="center"></td>
+					<td class="link">mo/system/allsystem-nodata</td>
+					<td class="center status"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+					<td class="center name"></td>
+					<td class="center etc"></td>
+				</tr>
+      </tbody>
+    </table>
+	</section>	
+</body>
+</html>			
+				
+	
+		

@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* ----------------------------------------
+      main.css : 모바일 메인;
+-------------------------------------------*/
+
+
+/*공통 style*/
+.main-content {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-quickBtn {padding:15px 0 0;border-top:1px solid #e2e2e2;background:#fff url(../../img/common/btm-line.gif) repeat-x bottom;margin-bottom:7px;}
+.main-quickBtn ul {width:100%;overflow:hidden;text-align:center;}
+.main-quickBtn ul li {width:33.3333%;float:left;}
+.main-quickBtn ul li a {}
+.main-quickBtn ul li a p {font-size:12px;color:#285a35;font-weight:500;padding:10px 0 15px;}
+.main-quickBtn ul li a span {display:block;width:62px;height:62px;margin:0 auto;}
+.main-quickBtn ul li.q01 span{background: url(../../img/main/btn-ico01.png) no-repeat;background-size:62px 62px;}
+.main-quickBtn ul li.q02 span{background: url(../../img/main/btn-ico02.png) no-repeat;background-size:62px 62px;}
+.main-quickBtn ul li.q03 span{background: url(../../img/main/btn-ico03.png) no-repeat;background-size:62px 62px;}
+.main-quickBtn ul li.q04 span{background: url(../../img/main/btn-ico04.png) no-repeat;background-size:62px 62px;}
+.main-quickBtn ul li.q05 span{background: url(../../img/main/btn-ico05.png) no-repeat;background-size:62px 62px;}
+.main-quickBtn ul li.q06 span{background: url(../../img/main/btn-ico06.png) no-repeat;background-size:62px 62px;}
+
+.today-listWp {background:#fff}
+.today-listWp h3 {font-size:19px;color:#2d2d2d;display:block;position:relative;padding:28px 0 15px 15px;}
+.btn-more {position:absolute;right:0;top:0;}
+.btn-more a {}
+.btn-more a em{}
+
+

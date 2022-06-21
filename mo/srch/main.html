@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>검색 메인</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/mobile/reset.css">
+	<link rel="stylesheet" href="../../css/mobile/common.css">
+	<link rel="stylesheet" href="../../css/mobile/swiper.css">
+	<link rel="stylesheet" href="../../css/mobile/emart.css">
+	<script src="../../js/mobile/lib/jquery-1.12.4.js"></script>
+	<script src="../../js/mobile/lib/swiper.min.js"></script>
+	<script src="../../js/mobile/front/common.js"></script><!--추후-->
+</head>
+<body>
+
+<div class="bodyWrap srch-wp"><!--검색 srch-wp 클래스 추가-->
+	<!--header-->
+	<header id="header">
+    <!--서브페이지 header영역-->
+		<div class="hd-topWp h-sub"><!--서브페이지 h-sub 클래스 추가-->
+      <div class="btn-back"><a href=""><span class="blind">뒤로가기</span></a></div>
+		</div>
+    <!--//서브페이지 header영역-->
+	</header>
+
+	<div id="container" class="srch"><!--검색 페이지에 srch 추가 -->
+		<div class="sub-contWp">
+			<section class="sub-content">
+				<h3 class="sub-title">통합검색</h3>
+
+				<div class="search-area-wrap">
+					<!--검색 영역-->
+					<div class="search-area">
+						<span class="ico-wp"><i class="icon-em-search"></i></span>
+						<span class="em-input-wp"><input type="text" class="em-input" id="" placeholder="시스템 메뉴, 업무도움방, 임직원 검색" ></span>
+						<button type="button" class="em-btn-delete"><em class="blind">삭제</em></button><!--검색어 입력하면 나타남-->
+						<button type="button" class="em-btn-search">검색</button>
+					</div>
+					<!--검색 영역-->
+					<!--검색 레이어창-->
+					<div class="search-open-layer">
+						<ul class="search-list">
+							<li>
+								<a href=""><em class="icon-em-sear-recent"></em><p class="ellipsis"><strong>이마트</strong><!--검색어--><span class="info">최근검색어</span></p></a>
+							</li>
+							<li>
+								<a href=""><em class="icon-em-sear-recent"></em><p class="ellipsis"><strong>이마트</strong><!--검색어-->성수역<span class="info">업무도움방</span></p></a>
+							</li>
+							<li>
+								<a href=""><em class="icon-em-search"></em><p class="ellipsis">성수역<strong>이마트</strong><!--검색어-->머스캣샤인머스캣샤인머스캣샤인머머<span class="info">시스템</span></p></a>
+							</li>
+							<li>
+								<a href=""><em class="icon-em-search"></em><p class="ellipsis">구정인머스캣샤인<strong>이마트</strong><!--검색어--><span class="info">게시글</span></p></a>
+							</li>
+						</ul>
+					</div><!--search-open-layer--> 
+					<!--//검색 레이어창-->
+				</div><!--//search-area-wrap-->
+
+				<!--검색이력 없는 경우 :인기검색어 만 노출-->
+					<div class="sear-word-list">
+						<div class="s-tit-wp"><em class="icon-em-popular"></em><strong class="s-tit">인기검색어</strong></div>
+						<ul class="s-list">
+							<li><a href="">구정</a></li>
+							<li><a href="">선물세트</a></li>
+							<li><a href="">노브랜드</a></li>
+							<li><a href="">명절행사</a></li>
+							<li><a href="">스타벅스</a></li>
+							<li><a href="">여름휴가여름휴가여름휴가여름휴가여름휴가여름휴가여름휴가여름휴가여름휴가여름휴가</a></li>
+							<li><a href="">식목일</a></li>
+							<li><a href="">노브랜드</a></li>
+							<li><a href="">명절행사</a></li>
+							<li><a href="">스타벅스</a></li>
+						</ul>
+					</div>
+				<!--검색이력 없는 경우-->
+       
+			</section><!--//sub-content-->
+		</div><!--//subCont-wp-->
+	</div><!--//#container-->
+</div><!--//bodyWrap-->
+</body>
+</html>
+                

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>알림위젯- to check</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/mobile/reset.css">
+	<link rel="stylesheet" href="../../css/mobile/common.css">
+	<link rel="stylesheet" href="../../css/mobile/swiper.css">
+	<link rel="stylesheet" href="../../css/mobile/emart.css">
+	<script src="../../js/mobile/lib/jquery-1.12.4.js"></script>
+	<script src="../../js/mobile/lib/swiper.min.js"></script>
+	<script src="../../js/mobile/front/common.js"></script>
+</head>
+<body>
+
+<div class="bodyWrap">
+	<!--header-->
+	<header id="header">
+    <!--서브페이지 header영역-->
+		<div class="hd-topWp h-sub"><!--서브페이지 h-sub 클래스 추가-->
+      <div class="btn-back"><a href=""><span class="blind">뒤로가기</span></a></div>
+      <h2 class="s-title">To check <strong class="num">5</strong></h2>
+      <div class="btn-close"><a href=""><span class="blind">닫기</span></a></div>
+		</div>
+    <!--//서브페이지 header영역-->
+	</header>
+
+	<div id="container" class="alim-wrap"><!--알림영역 페이지에 alim-wrap 추가 -->
+		<div class="portal-contWp">
+			<section class="portal-content">
+        <!--알림영역 : To check-->
+        <div class="alim-cont-wp">
+          <div class="alim-todo-wp">
+            <!-- 내용 -->
+            <div class="alim-content-wp">
+              <div class="alim-item">
+                <div class="accordion-wrap">
+                  <div class="accordion">
+                    <div class="accord-cont">
+                      <div class="a-head">
+                        <a href="#none" class="active"><!--열려있는 상태 active 추가-->
+                          <strong class="a-tit">UNCOMPLETED</strong>
+                          <span class="a-num str">3</span>
+                        </a>
+                      </div>
+                      <div class="a-body on"><!--열려있는 상태 on 추가-->
+                        <div class="a-cont-wp">
+                          <ul class="sign-list-wp">
+                            <li>
+                              <p class="tit"><a href="">신선 부문매가 판매건수, 매출액, 에누리 </a></p>
+                              <p class="info"><span class="left">판매건수판매건수판매건수</span><span class="right"><strong>3300</strong>건</span></p>
+                              <p class="info"><span class="left">매출액</span><span class="right"><strong>100</strong>억</span></p>
+                              <p class="info"><span class="left">에누리</span><span class="right"><strong>30</strong>억</span></p>
+                            </li>
+                            <li>
+                              <p class="tit"><a href=""><em class="icon-pc">PC</em>신선 부문매가 판매건수,매출액</a></p>
+                              <p class="info"><span class="left">판매건수</span><span class="right"><strong>100</strong>건</span></p>
+                              <p class="info"><span class="left">매출액</span><span class="right"><strong>100</strong>억</span></p>
+                            </li>
+                            <li>
+                              <p class="tit"><a href="">신선 부문매가 판매건수,매출액</a></p>
+                              <p class="info"><span class="left">판매건수</span><span class="right"><strong>100</strong>건</span></p>
+                              <p class="info"><span class="left">매출액</span><span class="right"><strong>100</strong>억</span></p>
+                            </li>
+                            <li>
+                              <!--그래프나오는 경우-->
+                              <div class="alim-graph-wp">
+                                <strong class="g-tit">폐점점포 재고소진율</strong>
+                                <div class="g-date">2022.03.10</div>
+                                <div style="background:lightblue;height: 150px;"><!--background:lightblue;height: 150px; 임시로 넣어둠 : 추후 삭제하기-->
+                                  그래프 영역
+                                </div>
+                              </div>
+                              <!--//그래프나오는 경우-->
+                            </li>
+                          </ul>
+                        </div>
+                      </div><!--//a-body-->
+                    </div><!--//accord-cont-->
+                    <div class="accord-cont">
+                        <div class="a-head">
+                            <a href="#none" class="active"><!--열려있는 상태 active 추가-->
+                              <strong class="a-tit">COMPLETED</strong>
+                              <span class="a-num">2</span>
+                            </a>
+                        </div>
+                      <div class="a-body on"><!--열려있는 상태 on 추가-->
+                        <div class="a-cont-wp">
+                          <ul class="a-list-wp check-completed"><!--to check에서 완료된 경우 check-completed 클래스 추가-->
+                            <li>
+                              <p><a href=""><em class="icon-pc">PC</em>긴급매가 적용 상품수, 매출액 조회</a></p>
+                              <strong class="num">11</strong>
+                            </li>
+                            <li>
+                              <p><a href="">당초 기타 수지 계획조정 및 시물레이션으로 타이틀이 2줄이 되는 경우</a></p>
+                              <strong class="num">11</strong>
+                            </li>
+                            <li>
+                              <!--그래프나오는 경우-->
+                              <div class="alim-graph-wp">
+                                <strong class="g-tit">폐점점포 재고소진율</strong>
+                                <div class="g-date">2022.03.10</div>
+                                <div style="background:lightyellow;height: 150px;"><!--background:lightyellow;height: 150px; 임시로 넣어둠 : 추후 삭제하기-->
+                                  그래프 영역
+                                </div>
+                              </div>
+                              <!--//그래프나오는 경우-->
+                            </li>
+                            <li>
+                              <!--그래프나오는 경우-->
+                              <div class="alim-graph-wp">
+                                <strong class="g-tit">평균증감율</strong>
+                                <div style="background:lightyellow;height: 150px;"><!--background:lightyellow;height: 150px; 임시로 넣어둠 : 추후 삭제하기-->
+                                  그래프 영역
+                                </div>
+                              </div>
+                              <!--//그래프나오는 경우-->
+                            </li>
+                          </ul>                                                      
+                        </div><!--//a-cont-wp-->
+                      </div>
+                    </div><!--//accord-cont-->
+                  </div><!--//accordion-->
+                </div><!--//accordion-wrap-->
+              </div>
+            </div>
+            <!-- //내용 -->
+          </div><!--//alim-todo-wp-->
+        </div><!--//alim-cont-wp-->
+        <!--//알림영역 : To check--->
+			</section><!--//portal-content-->
+		</div><!--//portalCont-wp-->
+	</div><!--//#container-->
+</div><!--//bodyWrap-->
+</body>
+</html>
+                

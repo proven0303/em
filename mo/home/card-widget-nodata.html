@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>이마트 모바일</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="../../css/mobile/reset.css">
+	<link rel="stylesheet" href="../../css/mobile/common.css">
+	<link rel="stylesheet" href="../../css/mobile/swiper.css">
+	<link rel="stylesheet" href="../../css/mobile/emart.css">
+	<script src="../../js/mobile/lib/jquery-1.12.4.js"></script>
+	<script src="../../js/mobile/lib/swiper.min.js"></script>
+	<script src="../../js/mobile/front/common.js"></script>
+</head>
+<body>
+
+<div class="bodyWrap">
+	<!--header-->
+	<header id="header">
+		<div class="hd-topWp">
+			<h1 class="logo"><a href=""><img src="../../images/emart/mo/logo_eportal50.png" alt="logo"><strong>업무포털</strong></a></h1>
+			<div class="top-menuWp">
+				<ul class="tmenu">
+					<li class="btn-sear"><a href=""><span class="blind">검색</span></a></li>
+					<li class="btn-alim"><a href=""><span class="blind">알림</span></a></li>
+					<li class="btn-set"><a href=""><span class="blind">설정</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<div id="container" class="em-portal"><!--메인 포탈에 em-portal 클래스 추가 -->
+		<div class="portal-contWp">
+			<section class="portal-content">
+			
+      <!--카드 위젯 모음-->
+        <!--점포요청-->
+        <article class="card-widget-wp">
+          <div class="card-widget bg-70">
+            <div class="p-head">
+              <strong class="tit">점포요청</strong>
+            </div>
+            <div class="p-body">
+              <!--데이터 없을 경우-->
+              <div class="card-nodata-wp">
+               <p class="nodata-txt">데이터가 없습니다.</p>
+              </div>
+              <!--데이터 없을 경우-->
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//점포요청-->
+
+        <!--점포요청-->
+        <article class="card-widget-wp">
+          <div class="card-widget bg-70">
+            <div class="p-head">
+              <strong class="tit">점포요청</strong>
+            </div>
+            <div class="p-body">
+              <!--데이터 없을 경우-->
+              <div class="card-nodata-wp">
+                <p class="nodata-txt">데이터가 없습니다.</p>
+              </div>
+              <!--데이터 없을 경우-->
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//점포요청-->
+
+        <!--점포의견취합-->
+        <article class="card-widget-wp">
+          <div class="card-widget bg-70">
+            <div class="p-head">
+              <strong class="tit">점포의견취합</strong>
+              <button type="button" class="em-btn btn-new-write"><em class="icon-plus-sm"></em>신규 작성</button>
+            </div>
+            <div class="p-body">
+              <!--데이터 없을 경우-->
+              <div class="card-nodata-wp">
+                <p class="nodata-txt">데이터가 없습니다.</p>
+              </div>
+              <!--데이터 없을 경우-->
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//점포의견취합-->
+
+        <!--고객의 소리-->
+         <article class="card-widget-wp">
+          <div class="card-widget bg-70">
+            <div class="p-head h-long"><!--고객의 소리와 같이 타이틀 영역에 들어가는 내용이 많을 경우 p-head에  h-long 클래스 추가-->
+              <strong class="tit">고객의 소리</strong><span class="s-tit ellipsis">구로구로구로구로구로구로구로구로구로점</span>
+              <div class="p-date"><em>22.03.09 16:00 ~ 22.03.10 14:00</em></div>
+            </div>
+            <div class="p-body">
+              <!--데이터 없을 경우-->
+              <div class="card-nodata-wp">
+                <p class="nodata-txt">데이터가 없습니다.</p>
+              </div>
+              <!--데이터 없을 경우-->
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//고객의 소리-->
+
+        <!--고객의 소리-->
+        <article class="card-widget-wp">
+          <div class="card-widget bg-70">
+            <div class="p-head h-long"><!--고객의 소리의 경우 p-head에  h-long 클래스 추가-->
+              <strong class="tit">고객의 소리</strong><span class="s-tit ellipsis">구로점</span>
+              <div class="p-date"><em>22.03.09 16:00 ~ 22.03.10 14:00</em></div>
+            </div>
+            <div class="p-body">
+              <!--데이터 없을 경우-->
+              <div class="card-nodata-wp">
+                <p class="nodata-txt">데이터가 없습니다.</p>
+              </div>
+              <!--데이터 없을 경우-->
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//고객의 소리-->
+
+        <!--뉴스-->
+        <article class="card-widget-wp">
+          <div class="card-widget bg-70">
+            <div class="p-head">
+              <strong class="tit">뉴스</strong>
+              <div class="p-date"><em>last updated 2022.03.14 16:00</em></div>
+              <div class="btn-refresh"><button class="em-icon-refresh"></button></div>
+            </div>
+            <div class="p-body">
+              <!--데이터 없을 경우-->
+              <div class="card-nodata-wp">
+                <p class="nodata-txt">데이터가 없습니다.</p>
+              </div>
+              <!--데이터 없을 경우-->
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//뉴스-->
+
+        <!--e소리 키워드-->
+        <article class="card-widget-wp">
+          <div class="card-widget bg-70">
+            <div class="p-head">
+              <strong class="tit">e소리 키워드</strong>
+              <div class="p-date"><em>22.03.09 ~ 22.03.10</em></div>
+            </div>
+            <div class="p-body">
+              <!--데이터 없을 경우-->
+              <div class="card-nodata-wp">
+                <p class="nodata-txt">데이터가 없습니다.</p>
+              </div>
+              <!--데이터 없을 경우-->
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//e소리 키워드-->
+
+        <!--매출실적 - 화살표 아이콘 누르면 레이어 팝업 열림-->
+        <article class="card-widget-wp">
+          <div class="card-widget bg-70">
+            <div class="p-head">
+              <strong class="tit">매출실적</strong>
+              <div class="p-date"><em>22.03.09 ~ 22.03.10</em></div>
+            </div>
+            <div class="p-body">
+              <!--데이터 없을 경우-->
+              <div class="card-nodata-wp">
+                <p class="nodata-txt">데이터가 없습니다.</p>
+              </div>
+              <!--데이터 없을 경우-->
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//매출실적-->
+
+        <!--상품실적 - 자세히보기 누르면 레이어 팝업 열림-->
+        <article class="card-widget-wp">
+          <div class="card-widget bg-70">
+            <div class="p-head">
+              <strong class="tit">상품실적</strong>
+              <span class="s-tit p-long">과일과일과일과일과일</span><!--상품명 p-long 클래스 추가-->
+              <div class="alim-top-btnWp type2">
+                  <span class=""><a href="javascript:;">전일</a></span><!--선택시 on 클래스 추가-->
+                  <span class="on"><a href="javascript:;">전월</a></span>
+              </div>
+            </div>
+            <div class="p-body">
+              <!--데이터 없을 경우-->
+              <div class="card-nodata-wp">
+                <p class="nodata-txt">데이터가 없습니다.</p>
+              </div>
+              <!--데이터 없을 경우-->
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//상품실적-->
+
+        <!--행사 실적 3개인 경우 : 하단의 top10 보기 누르면 레이어팝업 열림-->
+        <article class="card-widget-wp"> <!--행사실적 3개가 기본, 4개가 되면 er4 클래스 추가 -->
+          <div class="card-widget bg-70">
+            <div class="p-head event"><!--event 클래스 추가 -->
+              <strong class="tit"> 2022 발렌타인데이 매장행사실적<!--발렌타인데이 매장행사실적--></strong>
+              <span class="s-tit">구로구로구로점</span>
+              <div class="p-date"><em>2022.03.09 16:00</em></div>
+            </div>
+            <div class="p-body">
+              <!--데이터 없을 경우-->
+              <div class="card-nodata-wp">
+                <p class="nodata-txt">데이터가 없습니다.</p>
+              </div>
+              <!--데이터 없을 경우-->
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//행사 실적-->
+
+        <!--행사 실적 4개인 경우-->
+        <article class="card-widget-wp er4"> <!--행사실적 3개가 기본, 4개가 되면 er4 클래스 추가 -->
+          <div class="card-widget bg-70">
+            <div class="p-head event"><!--event 클래스 추가 -->
+              <strong class="tit"> 2022 발렌타인데이 매장행사실적<!--발렌타인데이 매장행사실적--></strong>
+              <div class="p-date"><em>2022.03.09 16:00</em></div>
+            </div>
+            <div class="p-body">
+             <!--데이터 없을 경우-->
+             <div class="card-nodata-wp">
+              <p class="nodata-txt">데이터가 없습니다.</p>
+            </div>
+            <!--데이터 없을 경우-->
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//행사 실적-->
+
+        <!--업무도움방 basic-work-help -->
+        <article class="card-widget-wp basic-work-help"> 
+          <div class="card-widget bg-70">
+            <div class="p-head">
+              <strong class="tit">업무도움방</strong>
+            </div>
+            <div class="p-body">
+              <!--데이터 없을 경우-->
+              <div class="card-nodata-wp">
+                <p class="nodata-txt">데이터가 없습니다.</p>
+              </div>
+              <!--데이터 없을 경우-->
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//업무도움방-->
+
+        <!--관심상품-->
+        <article class="card-widget-wp"> 
+          <div class="card-widget bg-70">
+            <div class="p-head">
+              <strong class="tit">관심상품</strong>
+            </div>
+            <div class="p-body">
+             <!--데이터 없을 경우-->
+             <div class="card-nodata-wp">
+              <p class="nodata-txt">데이터가 없습니다.</p>
+            </div>
+            <!--데이터 없을 경우-->
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//관심상품-->
+
+        <!--관심상품-->
+        <article class="card-widget-wp"> 
+          <div class="card-widget bg-70">
+            <div class="p-head">
+              <strong class="tit">관심상품</strong>
+            </div>
+            <div class="p-body">
+             <!--데이터 없을 경우-->
+             <div class="card-nodata-wp large">
+              <p class="nodata-txt">PC 업무포털에서 관심상품 위젯을 설치하신 뒤<br>
+                관심상품 그룹을 지정하시면<br>
+                모바일에서 동일한 데이터를 확인할 수 있습니다</p>
+            </div>
+            <!--데이터 없을 경우-->
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//관심상품-->
+
+        <!--시세조회-->
+        <article class="card-widget-wp">
+          <div class="card-widget bg-70">
+            <div class="p-head">
+              <strong class="tit">시세조회</strong>
+              <div class="p-date"><em>last updated 2022.03.09</em></div>
+            </div>
+            <div class="p-body">
+              <!--데이터 없을 경우-->
+              <div class="card-nodata-wp">
+                <p class="nodata-txt">데이터가 없습니다.</p>
+              </div>
+              <!--데이터 없을 경우-->
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//시세조회-->
+
+        <!--시세조회-->
+        <article class="card-widget-wp"> 
+          <div class="card-widget bg-70">
+            <div class="p-head">
+              <strong class="tit">시세조회</strong>
+              <div class="p-date"><em>last updated 2022.03.09</em></div>
+            </div>
+            <div class="p-body">
+             <!--데이터 없을 경우-->
+             <div class="card-nodata-wp large">
+              <p class="nodata-txt">PC 업무포털에서 시세조회 위젯을 설치하신 뒤<br>
+                시세조회 품목을 설정하시면<br>
+                모바일에서 동일한 데이터를 확인할 수 있습니다</p>
+            </div>
+            <!--데이터 없을 경우-->
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//시세조회-->
+
+        <!--결재 현황-->
+        <article class="card-widget-wp">
+          <div class="card-widget bg-70">
+            <div class="p-head">
+              <strong class="tit">결재 현황</strong>
+              <div class="p-date"><em>22.03.09 16:00 ~ 22.03.10</em></div>
+            </div>
+            <div class="p-body">
+               <!--데이터 없을 경우-->
+              <div class="card-nodata-wp">
+                <p class="nodata-txt">데이터가 없습니다.</p>
+              </div>
+              <!--데이터 없을 경우-->
+            </div><!--//p-body-->
+          </div><!--//card-widget-->
+        </article>
+        <!--//결재 현황-->
+
+      <!--//카드 위젯 모음-->
+
+        <!--하단 위젯 추가 버튼-->
+        <div class="widget-add-btn-wp">
+          <a href=""><em class="icon-plus"></em><span>위젯추가</span></a>
+        </div>
+        <!--//하단 위젯 추가 버튼-->
+			</section><!--//portal-content-->
+		</div><!--//portalCont-wp-->
+	</div><!--//#container-->
+
+  <footer id="footer">
+    <div class="footer-wp">
+      <div class="foot-menuWp">
+        <ul class="foot-menu">
+          <li class="on"><!--선택되면 on 클래스 추가-->
+            <a href="">
+              <em class="ico-ft01"></em>
+              <span>대시보드</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <em class="ico-ft02"></em>
+              <span class="long">시스템바로가기</span><!--시스템바로가기의 경우만 long 클래스 추가-->
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <em class="ico-ft03"></em>
+              <span>업무도움방</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <em class="ico-ft04"></em>
+              <span>전자결재</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+<!--======레이어 팝업 모음=========-->
+  <!--매출실적 화살표영역 누르면 나오는 팝업 : 상세 매출정보-->
+  <div class="pop-wrap" id="pop01">
+    <div class="bg"></div>
+    <div class="popup">
+      <div class="popup-con">
+        <div class="pop-head"><strong>당일 매출실적</strong></div>
+        <div class="pop-cont">
+          <div class="pop-graph-wp">
+            <strong class="g-tit">전체 매출실적</strong>
+            <!--임시 그래프 영역-->
+            <div class="bar-graph-wp" style="width:100%;background:lightgoldenrodyellow;height:186px;">
+            </div>
+            <!--//임시 그래프 영역-->
+          </div><!--//pop-graph-wp-->
+          <!--점포순위-->
+          <div class="review-detail-wp">
+            <div class="review-tit-wp">
+              <strong class="tit">점포순위</strong>
+              <span class="stit">매출(백만), 신장율</span>
+            </div>
+            <div class="round-tab-wp">
+              <!-- 탭메뉴 : swiper 사용하는 경우 sw-menu 추가-->
+              <div class="swiper-container r-tab-menu sw-menu">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">전체</span></a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">A타입</span></a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">B타입</span></a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">C타입</span></a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">D타입</span></a>
+                    </div>
+                  </li>
+                </ul>
+              </div><!--//r-tab-menu-->
+              <!--//탭메뉴-->
+              <!-- 탭패널 -->
+              <div class="tab-content-wp">
+                <div class="tab-item">
+                  <!--점포 순위-->
+                  <div class="rank-list-wp store">
+                    <ul>
+                        <li><em>1</em><span class="store-name">왕십리지점</span><span class="num">19,450</span><span class="per">+7.0%</span></li><!-- 기본이 + 상태이며, - 일때 minus 클래스 추가-->
+                        <li><em>2</em><span class="store-name">성수지점</span><span class="num">29,450</span><span class="per">+7.0%</span></li>
+                        <li><em>3</em><span class="store-name">왕십리지점</span><span class="num">9,450</span><span class="per">+7.0%</span></li>
+                        <li><em>4</em><span class="store-name">왕십리지점</span><span class="num">19,450</span><span class="per">+7.0%</span></li>
+                        <li><em>5</em><span class="store-name">왕십리지점</span><span class="num">44,540</span><span class="per">+27.0%</span></li>
+                        <li><em>6</em><span class="store-name">왕십리지점</span><span class="num">19,450</span><span class="per minus">-7.0%</span></li>
+                        <li><em>7</em><span class="store-name">왕십리왕십리지점</span><span class="num">19,450</span><span class="per">+7.0%</span></li>
+                        <li><em>8</em><span class="store-name">왕십리지점</span><span class="num">19,450</span><span class="per">+7.0%</span></li>
+                        <li><em>9</em><span class="store-name">왕십리지점</span><span class="num">19,450</span><span class="per">+7.0%</span></li>
+                        <li><em>10</em><span class="store-name">왕십리지점</span><span class="num">19,450</span><span class="per">+7.0%</span></li>
+                    </ul>
+                  </div>
+                  <!--//점포 순위-->
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                    tabcontent2
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                    tabcontent3
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                    tabcontent4
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                  tabcontent5
+                </div><!--//tab-item-->
+              </div>
+              <!-- //탭패널 -->
+            </div><!--//round-tab-wp-->
+
+          </div>
+          <!--//포순위-->
+        </div>
+      </div>
+      <a href="#" class="pop-close"><span class="blind">닫기</span></a>
+    </div>
+  </div>
+
+  <!--상품실적 자세히보기 누르면 나오는 팝업 -->
+  <div class="pop-wrap" id="pop02">
+    <div class="bg"></div>
+    <div class="popup">
+      <div class="popup-con">
+        <div class="pop-head"><strong>전일 상품 실적</strong></div>
+        <div class="pop-cont">
+         
+          <!--상품실적-->
+          <div class="review-goods-wp">
+            <div class="round-tab-wp">
+              <div class="r-tab-menu r-col2"><!--2개 탭일 경우 r-col2 추가-->
+                <ul>
+                  <li>
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">Top 10 상품</span></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">관심상품</span></a>
+                    </div>
+                  </li>
+                </ul>
+              </div><!--//r-tab-menu-->
+              <!--//탭메뉴-->
+              <!-- 탭패널 -->
+              <div class="tab-content-wp">
+                <div class="tab-item">
+                  <!--Top 10 상품-->
+                  <div class="rank-list-wp top10">
+                    <ul>
+                        <li><em>1</em><a href="">(S)나주전통배</a></li>
+                        <li><em>2</em><a href="">유명산지 배</a></li>
+                        <li><em>3</em><a href="">유명산지 사과</a></li>
+                        <li><em>4</em><a href="">유명산지 사과</a></li>
+                        <li><em>5</em><a href="">유명산지 사과</a></li>
+                        <li><em>6</em><a href="">유명산지 사과</a></li>
+                        <li><em>7</em><a href="">유명산지 사과</a></li>
+                        <li><em>8</em><a href="">유명산지 사과</a></li>
+                        <li><em>9</em><a href="">유명산지 사과유명산지 사과유명산지 사과유명산지 사과유명산지 사과</a></li>
+                        <li><em>10</em><a href="">유명산지 사과산지 사과산지 사과산지 사과</a></li>
+                    </ul>
+                  </div>
+                  <!--//Top 10 상품-->
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                    tabcontent2
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                    tabcontent3
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                    tabcontent4
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                  tabcontent5
+                </div><!--//tab-item-->
+              </div>
+              <!-- //탭패널 -->
+            </div><!--//round-tab-wp-->
+          </div>
+          <!--//상품실적-->
+        </div>
+      </div>
+      <a href="#" class="pop-close"><span class="blind">닫기</span></a>
+    </div>
+  </div>
+
+  <!--발렌타인데이 매장행사 자세히보기 누르면 나오는 팝업 : top10 정보 -->
+  <div class="pop-wrap" id="pop03">
+    <div class="bg"></div>
+    <div class="popup">
+      <div class="popup-con">
+        <div class="pop-head"><strong>2022 발렌타인데이 매장행사 실적</strong></div>
+        <div class="pop-cont">
+          <!--top10 점포순위-->
+          <div class="review-goods-wp top10">
+            <div class="round-tab-wp">
+              <!-- 탭메뉴 : swiper 사용하는 경우 sw-menu 추가-->
+              <div class="swiper-container r-tab-menu sw-menu">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">신선1</span></a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">신선2</span></a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">신선3</span></a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">가공</span></a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">라이프</span></a>
+                    </div>
+                  </li>
+                </ul>
+              </div><!--//r-tab-menu-->
+              <!--//탭메뉴-->
+              <!-- 탭패널 -->
+              <div class="tab-content-wp">
+                <div class="tab-item">
+                  <!--점포 순위-->
+                  <div class="rank-list-wp">
+                    <ul>
+                        <li><em>1</em>(S)나주전통배</li>
+                        <li><em>2</em>유명산지 배</li>
+                        <li><em>3</em>유명산지 사과</li>
+                        <li><em>4</em>유명산지 사과</li>
+                        <li><em>5</em>유명산지 사과</li>
+                        <li><em>6</em>유명산지 사과</li>
+                        <li><em>7</em>유명산지 사과</li>
+                        <li><em>8</em>유명산지 사과</li>
+                        <li><em>9</em>유명산지 사과유명산지 사과유명산지 사과유명산지 사과유명산지 사과</li>
+                        <li><em>10</em>유명산지 사과산지 사과산지 사과산지 사과</li>
+                    </ul>
+                </div>
+                  <!--//점포 순위-->
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                    tabcontent2
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                    tabcontent3
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                    tabcontent4
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                  tabcontent5
+                </div><!--//tab-item-->
+              </div>
+              <!-- //탭패널 -->
+            </div><!--//round-tab-wp-->
+          </div>
+          <!--//top10 점포순위-->
+        </div>
+      </div>
+      <a href="#" class="pop-close"><span class="blind">닫기</span></a>
+    </div>
+  </div>
+  
+  <!--발렌타인데이 매장행사 자세히보기 누르면 나오는 팝업 : top10 정보 -->
+  <div class="pop-wrap" id="pop04">
+    <div class="bg"></div>
+    <div class="popup">
+      <div class="popup-con">
+        <div class="pop-head"><strong>2022 발렌타인데이 매장행사 실적</strong></div>
+        <div class="pop-cont">
+          <!--top10 점포순위-->
+          <div class="review-goods-wp top10">
+            <div class="round-tab-wp">
+              <!-- 탭메뉴 : swiper 사용하는 경우 sw-menu 추가-->
+              <div class="swiper-container r-tab-menu sw-menu">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">가공</span></a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">신선2</span></a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">신선3</span></a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">축산</span></a>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="tmenu-wp">
+                      <a href="#none"><span class="tit">라이프</span></a>
+                    </div>
+                  </li>
+                </ul>
+              </div><!--//r-tab-menu-->
+              <!--//탭메뉴-->
+              <!-- 탭패널 -->
+              <div class="tab-content-wp">
+                <div class="tab-item">
+                  <!--점포 순위-->
+                  <div class="rank-list-wp">
+                    <ul>
+                        <li><em>1</em>(S)나주전통배</li>
+                        <li><em>2</em>유명산지 배</li>
+                        <li><em>3</em>유명산지 사과</li>
+                        <li><em>4</em>유명산지 사과</li>
+                        <li><em>5</em>유명산지 사과</li>
+                        <li><em>6</em>유명산지 사과</li>
+                        <li><em>7</em>유명산지 사과</li>
+                        <li><em>8</em>유명산지 사과</li>
+                        <li><em>9</em>유명산지 사과유명산지 사과유명산지 사과유명산지 사과유명산지 사과</li>
+                        <li><em>10</em>유명산지 사과산지 사과산지 사과산지 사과</li>
+                    </ul>
+                </div>
+                  <!--//점포 순위-->
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                    tabcontent2
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                    tabcontent3
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                    tabcontent4
+                </div><!--//tab-item-->
+                <div class="tab-item">
+                  tabcontent5
+                </div><!--//tab-item-->
+              </div>
+              <!-- //탭패널 -->
+            </div><!--//round-tab-wp-->
+          </div>
+          <!--//top10 점포순위-->
+        </div>
+      </div>
+      <a href="#" class="pop-close"><span class="blind">닫기</span></a>
+    </div>
+  </div>
+<!--//======레이어 팝업 모음=========-->
+
+</div><!--//bodyWrap-->
+</body>
+</html>
+                
